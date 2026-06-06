@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>数学·七年级考点全解（品言中考冲刺）</title>
+<style>
+  @page { size: A4; margin: 1.8cm 1.6cm; }
+  body { font-family: "WenQuanYi Zen Hei", sans-serif; font-size: 11pt; line-height: 1.7; color: #1a1a1a; }
+  h1 { font-size: 22pt; color: #1558b0; border-bottom: 3px solid #1558b0; padding-bottom: 8px; }
+  h2 { font-size: 16pt; color: #fff; background: #1558b0; padding: 6px 12px; margin-top: 26px; page-break-after: avoid; }
+  h3 { font-size: 13pt; color: #1558b0; border-left: 5px solid #1558b0; padding-left: 8px; margin-top: 18px; page-break-after: avoid; }
+  h4 { font-size: 12pt; color: #b8431f; margin: 12px 0 4px; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; page-break-inside: avoid; }
+  th, td { border: 1px solid #999; padding: 5px 8px; font-size: 10.5pt; vertical-align: top; }
+  th { background: #dce8fb; }
+  .law { background: #eef4ff; border: 1px solid #b9d2f7; border-radius: 6px; padding: 8px 12px; margin: 8px 0; page-break-inside: avoid; }
+  .eg { background: #f4faf2; border-left: 4px solid #4a9e3f; padding: 8px 12px; margin: 8px 0; page-break-inside: avoid; }
+  .eg b { color: #2e7d22; }
+  .warn { background: #fff4ec; border-left: 4px solid #e8731f; padding: 8px 12px; margin: 8px 0; page-break-inside: avoid; }
+  .warn b { color: #c4521a; }
+  .tag { display: inline-block; background: #1558b0; color: #fff; font-size: 9pt; padding: 1px 7px; border-radius: 3px; }
+  code { background: #f0f0f0; padding: 1px 4px; border-radius: 3px; font-size: 10.5pt; }
+  .lead { background:#fffbe6; border:1px solid #f0d97a; padding:10px 14px; border-radius:6px;}
+  ul { margin: 4px 0; padding-left: 22px; }
+  li { margin: 2px 0; }
+</style>
+</head>
+<body>
+
+<h1>数学 · 七年级考点全解</h1>
+<p class="lead"><b>用法</b>：① 你自己先读一遍把知识捡回来；② 复盘时拿品言的错题，对照各节的「易错警示」找规律；③ 例题可直接当讲解模板。<br>
+<b>现阶段重心</b>：七上是整个初中代数的地基——<b>有理数运算</b>和<b>解方程</b>必须零失误，否则八年级物理、九年级大题全塌。</p>
+
+<!-- ============ 七上 ============ -->
+<h2>第一章　有理数</h2>
+
+<h3>1.1 基本概念</h3>
+<table>
+<tr><th>概念</th><th>含义</th><th>关键</th></tr>
+<tr><td>正数 / 负数</td><td>大于 0 为正，小于 0 为负</td><td><b>0 既不是正数也不是负数</b></td></tr>
+<tr><td>有理数</td><td>整数 + 分数（可写成分数的数）</td><td>整数含正整数、0、负整数</td></tr>
+<tr><td>数轴</td><td>规定原点、正方向、单位长度的直线</td><td>右边的数总比左边的大</td></tr>
+<tr><td>相反数</td><td>只有符号不同的两个数</td><td>a 的相反数是 −a；<b>0 的相反数是 0</b></td></tr>
+<tr><td>绝对值</td><td>数轴上点到原点的距离</td><td>恒 ≥ 0</td></tr>
+</table>
+
+<div class="law"><b>绝对值法则（必背）</b>：｜a｜ = a（当 a≥0）；<b>｜a｜ = −a（当 a&lt;0）</b>。<br>
+即：正数和 0 的绝对值是它本身，负数的绝对值是它的相反数（结果为正）。</div>
+
+<div class="eg"><b>例 1</b>　已知 ｜x｜ = 5，求 x。<br>
+<b>解</b>：到原点距离为 5 的数有两个 → <b>x = 5 或 x = −5</b>。<br>
+<i>(易漏负的那个，绝对值方程常有两解)</i></div>
+
+<h3>1.2 有理数的加减法</h3>
+<div class="law"><b>加法法则</b>：<br>
+① 同号两数相加：取相同符号，绝对值相加。　例 (−3)+(−5) = −8<br>
+② 异号两数相加：取绝对值较大的符号，用大绝对值减小绝对值。　例 (−7)+3 = −4<br>
+③ 互为相反数的两数相加得 0。<br>
+<b>减法法则</b>：减去一个数 = 加上它的相反数。　a − b = a + (−b)</div>
+
+<div class="eg"><b>例 2</b>　计算 (−6) − (−10) + (−4)<br>
+<b>解</b>：= (−6) + 10 + (−4)　〔减变加，−10 变 +10〕<br>
+= 4 + (−4) = <b>0</b></div>
+
+<div class="warn"><b>易错警示 ①（符号）</b>：减号变加号时，<b>后面那个数也要变相反数</b>。<code>−(−10)</code> 要变成 <code>+10</code>，最常漏。</div>
+
+<h3>1.3 有理数的乘除与乘方</h3>
+<div class="law">
+<b>乘除符号</b>：同号得正，异号得负；<b>负因数个数为偶 → 积为正，为奇 → 积为负</b>。<br>
+<b>乘方</b>：aⁿ 表示 n 个 a 相乘。负数的偶次幂为正，奇次幂为负。<br>
+<b>科学计数法</b>：a×10ⁿ（1 ≤ ｜a｜ &lt; 10）。</div>
+
+<div class="warn"><b>易错警示 ②（乘方）</b>：<br>
+<code>(−2)² = 4</code>（底数是 −2）　但　<code>−2² = −4</code>（底数是 2，负号在外）。<b>看清负号在不在括号里！</b></div>
+
+<div class="eg"><b>例 3</b>　计算 −3² + (−2)³ ÷ 4<br>
+<b>解</b>：= −9 + (−8) ÷ 4 = −9 + (−2) = <b>−11</b><br>
+<i>(先算乘方，−3²=−9，(−2)³=−8；再乘除，最后加减)</i></div>
+
+<h2>第二章　整式的加减</h2>
+<table>
+<tr><th>概念</th><th>说明</th><th>例</th></tr>
+<tr><td>单项式</td><td>数与字母的积</td><td>3a²b，系数 3，次数 3</td></tr>
+<tr><td>多项式</td><td>几个单项式的和</td><td>2x² − 3x + 1（三项）</td></tr>
+<tr><td>同类项</td><td>所含字母相同且<b>相同字母指数也相同</b></td><td>3x²y 与 −5x²y</td></tr>
+</table>
+
+<div class="law"><b>合并同类项</b>：只把<b>系数相加减</b>，字母和指数<b>都不变</b>。<br>
+<b>去括号</b>：括号前是「+」原样去；括号前是「−」，去掉后里面<b>每一项都变号</b>。</div>
+
+<div class="warn"><b>易错警示 ③（去括号变号）</b>：<code>−(3x − 5)</code> 应等于 <code>−3x + 5</code>，常错写成 <code>−3x − 5</code>。<br>
+<b>方法</b>：去括号时，先在每一项上方标好新符号再写。</div>
+
+<div class="eg"><b>例 4</b>　化简 5a − (3a − 2b) + (−b)<br>
+<b>解</b>：= 5a − 3a + 2b − b　〔去括号，第二个括号每项变号〕<br>
+= (5a − 3a) + (2b − b) = <b>2a + b</b></div>
+
+<h2>第三章　一元一次方程</h2>
+<div class="law"><b>等式性质</b>：两边同加/减同一个数、同乘/除同一个非零数，等式仍成立。<br>
+<b>解方程五步</b>：① 去分母 → ② 去括号 → ③ 移项 → ④ 合并同类项 → ⑤ 系数化为 1。</div>
+
+<div class="warn"><b>易错警示 ④（去分母漏乘）</b>：去分母时方程<b>每一项都要乘公分母</b>，<b>没有分母的项也要乘</b>！<br>
+<b>易错警示 ⑤（移项变号）</b>：项移过等号要<b>变正负</b>。口诀「过等号，变正负」。</div>
+
+<div class="eg"><b>例 5</b>　解方程 (x − 1)/2 + 1 = x/3<br>
+<b>解</b>：去分母（×6，<b>每项都乘</b>）：3(x − 1) + 6 = 2x<br>
+去括号：3x − 3 + 6 = 2x<br>
+移项：3x − 2x = 3 − 6<br>
+合并：x = <b>−3</b></div>
+
+<h3>3.1 应用题：找等量关系（重点难点）</h3>
+<table>
+<tr><th>类型</th><th>核心等量关系</th></tr>
+<tr><td>行程</td><td>路程 = 速度 × 时间；相遇：两人路程和=总路程；追及：路程差=起始距离</td></tr>
+<tr><td>工程</td><td>工作总量=工作效率×时间（总量常设为 1）</td></tr>
+<tr><td>利润</td><td>利润 = 售价 − 进价；售价 = 标价 × 折扣</td></tr>
+<tr><td>和差倍分</td><td>抓「比…多/少」「是…的几倍」翻译成式子</td></tr>
+</table>
+<div class="eg"><b>例 6</b>　某数的 3 倍比它的 2 倍多 5，求这个数。<br>
+<b>解</b>：设这个数为 x，则 3x = 2x + 5 → x = <b>5</b>。<br>
+<i>(复盘提问：让品言先用一句话说出"谁等于谁"，列不出关系式是应用题最大卡点)</i></div>
+
+<h2>第四章　几何图形初步</h2>
+<ul>
+<li><b>直线、射线、线段</b>：两点确定一条直线；<b>两点之间，线段最短</b>；两点间线段长度叫两点间的距离。</li>
+<li><b>角</b>：1° = 60′，1′ = 60″（60 进制，类似时间）。</li>
+<li><b>余角与补角</b>：和为 90° 互余；和为 180° 互补。<b>同角(等角)的余角相等，补角也相等</b>。</li>
+<li><b>角平分线</b>：把一个角分成两个相等的角的射线。</li>
+</ul>
+<div class="eg"><b>例 7</b>　一个角的补角比它的余角大多少度？<br>
+<b>解</b>：设角为 x，补角 (180−x)，余角 (90−x)，差 = (180−x)−(90−x) = <b>90°</b>（与 x 无关）。</div>
+
+<!-- ============ 七下 ============ -->
+<h2>第五章　相交线与平行线（七下）</h2>
+<table>
+<tr><th>名称</th><th>特征</th><th>关系</th></tr>
+<tr><td>对顶角</td><td>两直线相交，相对的两角</td><td><b>对顶角相等</b></td></tr>
+<tr><td>邻补角</td><td>有公共边，另一边互为反向延长</td><td>互补（和 180°）</td></tr>
+<tr><td>同位角 / 内错角 / 同旁内角</td><td>「三线八角」</td><td>判定与性质的载体</td></tr>
+</table>
+<div class="law"><b>平行线判定（由角→平行）</b>：同位角相等、内错角相等、同旁内角互补 → 两直线平行。<br>
+<b>平行线性质（由平行→角）</b>：两直线平行 → 同位角相等、内错角相等、同旁内角互补。</div>
+<div class="warn"><b>易错警示 ⑥</b>：<b>判定</b>是"由角相等推出平行"，<b>性质</b>是"由平行推出角相等"，方向相反，证明时别用反。</div>
+
+<h2>第六章　实数（七下）</h2>
+<ul>
+<li><b>算术平方根</b>：正数 a 的正的平方根，记 √a（√a ≥ 0）。</li>
+<li><b>平方根</b>：正数有两个平方根（±√a）；0 的平方根是 0；<b>负数没有平方根</b>。</li>
+<li><b>立方根</b>：任何数都有唯一立方根，<b>负数的立方根是负数</b>（∛−8 = −2）。</li>
+<li><b>无理数</b>：无限不循环小数，如 √2、π。<b>实数 = 有理数 + 无理数</b>。</li>
+</ul>
+<div class="warn"><b>易错警示 ⑦</b>：√9 = <b>3</b>（算术平方根只取正）；而 "9 的平方根" = <b>±3</b>。两者问法不同，答案不同。</div>
+
+<h2>第七章　平面直角坐标系（七下）</h2>
+<ul>
+<li>点的坐标 (x, y)：x 横坐标在前，y 纵坐标在后。</li>
+<li><b>象限符号</b>：一(+,+)、二(−,+)、三(−,−)、四(+,−)。</li>
+<li>x 轴上点 y=0，y 轴上点 x=0。</li>
+<li><b>平移</b>：左右移动改变 x（右加左减），上下移动改变 y（上加下减）。</li>
+</ul>
+
+<h2>第八章　二元一次方程组（七下）</h2>
+<div class="law"><b>核心思想：消元</b>（把"两个未知数"变成"一个未知数"）。<br>
+<b>代入消元</b>：从一个方程解出一个字母，代入另一个。<br>
+<b>加减消元</b>：使某字母系数相同/相反，两式相加减消去它。</div>
+<div class="eg"><b>例 8</b>　解　x + y = 10 ……①　　2x − y = 5 ……②<br>
+<b>解</b>：①+②（消 y）：3x = 15 → x = 5；代入① → y = 5。解：<b>x=5, y=5</b>。</div>
+
+<h2>第九章　不等式与不等式组（七下）</h2>
+<div class="warn"><b>易错警示 ⑧（最高频！）</b>：不等式两边<b>同乘或同除一个负数，不等号方向要改变</b>。<br>
+例：−2x &gt; 6 → x <b>&lt;</b> −3（除以 −2，&gt; 变 &lt;）。</div>
+<ul>
+<li>解集在数轴上表示：<b>≥、≤ 用实心点</b>，<b>&gt;、&lt; 用空心点</b>。</li>
+<li>不等式组解集："大大取大、小小取小、大小小大取中间、大大小小无解"。</li>
+</ul>
+
+<h2>第十章　数据的收集、整理与描述（七下）</h2>
+<ul>
+<li><b>全面调查（普查）</b> vs <b>抽样调查</b>（总体、个体、样本、样本容量）。</li>
+<li>统计图：条形图（看数量）、折线图（看趋势）、扇形图（看占比，圆心角 = 百分比 × 360°）。</li>
+<li>频数 = 出现次数；频率 = 频数 ÷ 总数。</li>
+</ul>
+
+<h2>附：七年级"计算关"自测清单（给品言每天练）</h2>
+<table>
+<tr><th>每天 10 题，限时，错题标错因</th><th>错因代码</th></tr>
+<tr><td>有理数加减乘除乘方混合运算 3 题</td><td>A 符号 / E 概念</td></tr>
+<tr><td>整式化简（含去括号）2 题</td><td>A 变号 / D 合并</td></tr>
+<tr><td>解一元一次方程（含分母）3 题</td><td>B 漏乘 / C 移项</td></tr>
+<tr><td>二元一次方程组 2 题</td><td>消元步骤</td></tr>
+</table>
+<p style="text-align:center;color:#888;font-size:9pt;margin-top:20px;">— 数学·七年级考点全解 完 —　依据义务教育数学课程标准(2022)及人教版教材</p>
+
+</body>
+</html>
