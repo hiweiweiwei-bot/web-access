@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>数学·八年级上册 解题思路拓展手册（模型·辅助线·思想方法）</title>
+<style>
+  @page { size: A4; margin: 1.7cm 1.5cm; }
+  body { font-family: "WenQuanYi Zen Hei", sans-serif; font-size: 11pt; line-height: 1.68; color: #1a1a1a; }
+  h1 { font-size: 20pt; color: #1558b0; border-bottom: 3px solid #1558b0; padding-bottom: 6px; margin-bottom:4px;}
+  h2 { font-size: 15pt; color: #fff; background: #1558b0; padding: 5px 11px; margin-top: 22px; page-break-after: avoid; }
+  h2.alg { background:#0b7a5b; }
+  h3 { font-size: 12.5pt; color: #1558b0; border-left: 5px solid #1558b0; padding-left: 8px; margin-top: 15px; page-break-after: avoid; }
+  h2.alg + * h3, .alg-sec h3 { color:#0b7a5b; border-left-color:#0b7a5b;}
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; page-break-inside: avoid; }
+  th, td { border: 1px solid #999; padding: 5px 8px; font-size: 10.5pt; vertical-align: top; }
+  th { background: #dce8fb; }
+  .model { background:#f5f9ff; border:1px solid #c5d9f5; border-radius:6px; padding:8px 12px; margin:9px 0; page-break-inside:avoid;}
+  .model b.t { color:#1558b0; font-size:11.5pt;}
+  .trig { background:#fff7ee; border-left:4px solid #e8731f; padding:8px 12px; margin:8px 0; page-break-inside:avoid;}
+  .trig b { color:#c4521a;}
+  .eg { background:#f4faf2; border-left:4px solid #4a9e3f; padding:8px 12px; margin:8px 0; page-break-inside:avoid;}
+  .eg b { color:#2e7d22;}
+  .lead { background:#fffbe6; border:1px solid #f0d97a; padding:9px 13px; border-radius:6px;}
+  code { background:#f0f0f0; padding:1px 4px; border-radius:3px;}
+  ul,ol { padding-left:22px; margin:5px 0;} li { margin:3px 0;}
+  .pagebreak { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<h1>数学·八年级上册　解题思路拓展手册</h1>
+<p class="lead"><b>这本手册解决什么</b>：做题+错题本能"夯实知识点"，但解不出题往往是<b>"看着图想不到怎么下手"</b>。本册专攻<b>解题思路</b>——把八上几何浓缩成 <b>7 个模型 + 一张辅助线触发表</b>，把代数浓缩成 <b>6 种思想方法</b>，再用"一题多解 / 一题多变"打通举一反三。<br>
+<b>怎么用</b>：① 先和品言一起认模型；② 每做一道几何题，问她"<b>这是哪个模型？该画什么辅助线？</b>"；③ 做完归类——把题贴进对应模型，而不是只记"对/错"。</p>
+
+<h2>第一部分　解题思维四步法（元认知，先建流程）</h2>
+<table>
+<tr><th>步骤</th><th>做什么</th><th>对自己提的问题</th></tr>
+<tr><td>① 审题</td><td>把文字条件标到图上；把"中点、角平分线、垂直"等关键词圈出</td><td>"已知给了什么？要证什么？"</td></tr>
+<tr><td>② 联想</td><td>识别这是哪个<b>模型</b>，触发对应<b>辅助线</b></td><td>"这个图像哪个模型？见到这个条件该画什么？"</td></tr>
+<tr><td>③ 执行</td><td>按全等判定规范书写（见第四部分模板）</td><td>"判定方法选对了吗？步骤全吗？"</td></tr>
+<tr><td>④ 反思</td><td>解完归类：这题本质是什么模型，下次怎么认出来</td><td>"这一类题的通法是什么？"</td></tr>
+</table>
+<p>核心：<b>把"会不会这道题"升级成"会不会这一类题"</b>。第④步最值钱，多数人省略，所以永远在刷新题。</p>
+
+<h2>第二部分　八上几何 7 大经典模型（看图认模型）</h2>
+
+<div class="model"><b class="t">模型 1　手拉手模型（共顶点双等腰 → 全等）</b><br>
+<b>特征</b>：两个等腰三角形（或两条相等线段）共用一个顶点，像两人"手拉手"。<br>
+<b>用法</b>：通过"等边 + 公共角/等角 + 等边"凑 <b>SAS</b> 证全等，从而转移边、角相等。<br>
+<b>口诀</b>：共顶点、等线段、转个角 = SAS。</div>
+
+<div class="model"><b class="t">模型 2　三垂直 / 一线三等角（K 字图 → 全等）</b><br>
+<b>特征</b>：一条直线上有<b>三个相等的角</b>（八上常见是三个直角，形如 K/凸），且有一对对应边相等。<br>
+<b>用法</b>：用<b>同角的余角相等</b>导出另一组角相等，再用 <b>AAS</b> 证全等。<br>
+<b>触发</b>：见"直角 + 直角共线"立刻找这个模型。</div>
+
+<div class="model"><b class="t">模型 3　角平分线模型（两种走法）</b><br>
+<b>特征</b>：图中有角平分线。<br>
+<b>走法 A</b>：角平分线上一点<b>向角两边作垂线</b> → 用"角平分线上的点到两边距离相等"。<br>
+<b>走法 B</b>：角平分线 + <b>平行线</b> → 必出<b>等腰三角形</b>（角平分线 + 平行 = 等腰）。</div>
+
+<div class="model"><b class="t">模型 4　倍长中线模型（有中线就延长一倍）</b><br>
+<b>特征</b>：题中出现<b>中线 / 中点</b>，且要证边的关系或角的关系。<br>
+<b>用法</b>：<b>延长中线一倍</b>（延长 AD 至 E 使 DE=AD），连接构造 <b>SAS 全等</b>，把分散的边/角"搬到一起"。<br>
+<b>触发</b>：见中线想不到思路 → 直接倍长。</div>
+
+<div class="model"><b class="t">模型 5　截长补短模型（证线段和差 a = b + c）</b><br>
+<b>特征</b>：要证<b>一条线段 = 另两条线段之和（差）</b>。<br>
+<b>截长</b>：在长线段上截取一段等于其中一条短的，证剩下的等于另一条。<br>
+<b>补短</b>：把短的延长补成长的，证补出来的等于长线段。<br>
+<b>两种任选其一，通常都能通。</b></div>
+
+<div class="model"><b class="t">模型 6　等腰三角形"三线合一"模型</b><br>
+<b>特征</b>：出现等腰三角形 + 底边中点 / 底边高 / 顶角平分线中的<b>任意一个</b>。<br>
+<b>用法</b>：这一条线同时是<b>中线、高、角平分线</b>三个身份，<b>哪个有用用哪个</b>（要证垂直就用高，要证中点就用中线）。<br>
+<b>反向</b>：求等腰三角形的角，<b>务必分"顶角 / 底角"两种情况讨论</b>（八上最高频陷阱）。</div>
+
+<div class="model"><b class="t">模型 7　将军饮马（轴对称求最短路径）</b><br>
+<b>特征</b>：在一条直线上找一点，使它到两定点的<b>距离之和最短</b>。<br>
+<b>用法</b>：作其中一点<b>关于直线的对称点</b>，连接对称点与另一点，<b>与直线的交点即所求</b>（化"折"为"直"）。</div>
+
+<h2>第三部分　辅助线"触发器"对照表（看到 X，就画 Y）</h2>
+<p>辅助线不是灵感，是<b>条件触发的固定反应</b>。背熟这张表，几何不再"干瞪眼"。</p>
+<table>
+<tr><th>看到这个条件 →</th><th>就想到画 →</th><th>对应模型</th></tr>
+<tr><td>中线 / 中点（要证边角关系）</td><td><b>倍长中线</b>（延长一倍构造全等）</td><td>模型 4</td></tr>
+<tr><td>角平分线</td><td><b>向两边作垂线</b> / 翻折</td><td>模型 3A</td></tr>
+<tr><td>角平分线 + 平行线</td><td>直接得<b>等腰三角形</b></td><td>模型 3B</td></tr>
+<tr><td>等腰三角形（顶点）</td><td>作<b>底边上的高</b>（三线合一）</td><td>模型 6</td></tr>
+<tr><td>两直角共线 / 三等角共线</td><td>找<b>一线三等角全等</b></td><td>模型 2</td></tr>
+<tr><td>证 线段和差 a = b + c</td><td><b>截长补短</b></td><td>模型 5</td></tr>
+<tr><td>求"到两点距离和最短"</td><td><b>作轴对称点</b>，化折为直</td><td>模型 7</td></tr>
+<tr><td>两等腰/等线段共顶点</td><td>找<b>手拉手全等</b>（凑 SAS）</td><td>模型 1</td></tr>
+</table>
+<div class="trig"><b>辅助线书写规范</b>：辅助线要<b>先在证明开头交代清楚</b>，再使用。例：<br>
+"如图，<b>延长 AD 至点 E，使 DE = AD，连接 BE</b>。" / "如图，<b>过点 P 作 PM⊥OA 于 M，PN⊥OB 于 N</b>。"</div>
+
+<!-- ===================== 代数 ===================== -->
+<div class="alg-sec">
+<h2 class="alg">第四部分　代数 6 大思想方法（幂·公式·因式分解·分式）</h2>
+
+<h3>① 整体思想（把一坨式子当一个量）</h3>
+<div class="eg"><b>例</b>　已知 a + b = 3，ab = 1，求 a² + b²。<br>
+<b>思路</b>：a² + b² = (a+b)² − 2ab = 3² − 2×1 = <b>7</b>。<br>
+<i>把 (a+b)、ab 当整体代入，不必求出 a、b。</i></div>
+
+<h3>② 公式逆用（因式分解 = 乘法公式倒过来）</h3>
+<div class="eg"><b>例</b>　计算 2024² − 2023² 。<br>
+<b>思路</b>：用平方差<b>逆用</b> = (2024+2023)(2024−2023) = 4047×1 = <b>4047</b>。<br>
+<i>正用 (a+b)(a−b)=a²−b²，逆用 a²−b²=(a+b)(a−b)，两个方向都要会。</i></div>
+
+<h3>③ 配方 / 配凑完全平方</h3>
+<div class="eg"><b>例</b>　证明 a² − 4a + 5 &gt; 0 恒成立。<br>
+<b>思路</b>：配方 = (a−2)² + 1 ≥ 1 &gt; 0。<br>
+<i>把二次式凑成"完全平方 + 正数"，是证恒正/求最值的通法。</i></div>
+
+<h3>④ 因式分解方法选择顺序：一提 → 二套 → 三彻底</h3>
+<ul>
+<li><b>一提</b>：先看有没有<b>公因式</b>，有就先提。</li>
+<li><b>二套</b>：再看能否<b>套公式</b>（平方差 / 完全平方）。</li>
+<li><b>三彻底</b>：检查每个因式<b>是否还能再分</b>，分到底为止。</li>
+</ul>
+<div class="eg"><b>例</b>　分解 3a³ − 12a = 3a(a²−4) = <b>3a(a+2)(a−2)</b>。<i>（先提 3a，再套平方差，检查彻底）</i></div>
+
+<h3>⑤ 分式求值：先化简，再整体代入</h3>
+<div class="eg"><b>例</b>　已知 x + 1/x = 3，求 x² + 1/x²。<br>
+<b>思路</b>：x² + 1/x² = (x + 1/x)² − 2 = 3² − 2 = <b>7</b>。<br>
+<i>"知和求平方和"用整体平方减 2，是分式求值经典套路。</i></div>
+
+<h3>⑥ 分式方程必验根（思想：警惕增根）</h3>
+<div class="trig"><b>去分母会引入"假根"</b>——使最简公分母为 0 的根必须舍去。<b>解完一定代回检验</b>，这一步漏了整题作废。</div>
+</div>
+
+<!-- ===================== 一题多解多变 ===================== -->
+<h2>第五部分　一题多解 + 一题多变（思维灵活性训练）</h2>
+<h3>一题多解：同一道题，多条路</h3>
+<p>拿一道全等题，刻意要求品言<b>用两种不同判定走一遍</b>（如能用 SAS 也能用 ASA），比做两道新题更练思维。<b>问她："还有别的方法吗？"</b>——这句话是思路拓展的发动机。</p>
+<div class="eg"><b>训练话术</b>：<br>
+"这道题你用了 SAS。如果不用 SAS，<b>还能怎么证全等</b>？"<br>
+"这条线段相等，除了全等，<b>能不能用等腰三线合一</b>得到？"</div>
+
+<h3>一题多变：图变了，模型没变</h3>
+<p>把一道题的条件<b>逐步改动</b>，让品言发现"<b>本质模型不变</b>"，这是举一反三最快的练法：</p>
+<table>
+<tr><th>变式方向</th><th>怎么改</th><th>训练目标</th></tr>
+<tr><td>换数字</td><td>把已知边角数值改掉</td><td>确认方法不依赖具体数</td></tr>
+<tr><td>换条件给法</td><td>把"给中点"改成"给中线相等"</td><td>识别同一模型的不同外衣</td></tr>
+<tr><td>反过来问</td><td>把"已知 → 求证"颠倒</td><td>理解条件与结论的关系</td></tr>
+<tr><td>加一步</td><td>在原图上多连一条线再问</td><td>提升综合应变（对接中考压轴）</td></tr>
+</table>
+
+<h2>给品言的"模型本"用法（替代纯错题本）</h2>
+<ol>
+<li>每做完一道几何题，<b>不只记对错</b>，先写一句："这题是【模型几】，辅助线画的是【…】。"</li>
+<li>把同一模型的题<b>贴在一起</b>，一个模型攒 3~5 题，就会形成"看到就有思路"的条件反射。</li>
+<li>代数题旁标<b>用了哪种思想</b>（整体 / 逆用 / 配方 / 整体代入）。</li>
+</ol>
+<p style="text-align:center;color:#888;font-size:9pt;margin-top:16px;">— 数学·八年级上册 解题思路拓展手册 完 —　依据义务教育数学课程标准(2022)及人教版教材</p>
+</body>
+</html>
