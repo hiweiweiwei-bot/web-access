@@ -87,30 +87,44 @@
 <li><b>折叠(轴对称)性质</b>：折叠前后全等 ⇒ 对应角相等、对应边相等。<span class="key">(∠ADB=∠ADB′)</span></li>
 <li><b>邻补角</b>：∠ADB+∠ADC=180°。</li>
 </ol></div>
-<div class="q"><b class="no">题：</b>AB=AC，∠B=20°，D 是 BC 上动点，沿 AD 对折使 B 落在 B′，当 B′D⊥BC 时求∠BAD。
-<svg class="fig" viewBox="0 0 340 230">
-  <line x1="170" y1="45" x2="45" y2="205"/><line x1="170" y1="45" x2="295" y2="205"/><line x1="45" y1="205" x2="295" y2="205"/><line x1="170" y1="45" x2="120" y2="205"/>
-  <line class="aux" x1="120" y1="205" x2="120" y2="120"/><line class="aux" x1="170" y1="45" x2="120" y2="120"/>
-  <path class="rt" d="M120 193 L132 193 L132 205"/>
-  <text x="60" y="200" class="red" style="font-size:10px">20°</text>
-  <circle cx="170" cy="45" r="3"/><circle cx="45" cy="205" r="3"/><circle cx="295" cy="205" r="3"/><circle cx="120" cy="205" r="3"/><circle cx="120" cy="120" r="3"/>
-  <text x="164" y="40">A</text><text x="35" y="218">B</text><text x="297" y="218">C</text><text x="112" y="222">D</text><text x="100" y="118">B′</text>
-</svg></div>
-<div class="diag"><b>②考什么·卡在哪：</b>考"折叠⇒对应角相等"+内角和+邻补角。她常卡在：不会把"折叠"翻译成"∠ADB′=∠ADB"；漏掉分类讨论只写一个答案。</div>
+<div class="q"><b class="no">题：</b>AB=AC，∠B=20°，D 是 BC 上动点，沿 AD 对折使 B 落在 B′，当 B′D⊥BC 时求∠BAD。<br><span style="color:#c4521a;">（B′ 可能折到 BC 上方或下方 ⇒ 必须分两种情况，图见下方解答）</span></div>
+<div class="diag"><b>②考什么·卡在哪：</b>考"折叠⇒对应角相等"+内角和+邻补角。她常卡在：不会把"折叠"翻译成"∠ADB′=∠ADB"；<b>漏掉分类讨论</b>（B′ 在 BC 上方 / 下方）只写一个答案。</div>
 <div class="think"><b>③为什么这么想　<span class="sig">触发信号</span></b>
 <ol style="margin:3px 0;">
-<li><b>看到"折叠/翻折" ⇒ 立刻写"对应角相等、对应边相等"</b>(折叠=轴对称)。这是折叠题第一反应。</li>
-<li><b>角度环环相扣、直接求不出 ⇒ 设要求的角为 x</b>(方程思想)，把相关角都用 x 表示，再用"B′D⊥BC=90°"<b>列方程</b>。</li>
-<li><b>出现"动点 / 垂直" ⇒ 警惕分类讨论</b>(B′ 落在两种位置 ⇒ 两解)。</li>
+<li><b>看到"折叠/翻折" ⇒ 立刻写"对应角相等"</b>：∠ADB′=∠ADB。</li>
+<li><b>有"动点 / 垂直" ⇒ 分两种情况</b>：B′ 折到 BC <b>上方</b>、<b>下方</b>各一种，<b>各画一张图</b>。</li>
+<li><b>设 ∠BAD=x</b>，把图里的角都用 x 表示，再<b>对着图把角加起来</b>列方程（看哪两个角拼成第三个，<b>不用绝对值</b>）。</li>
 </ol></div>
-<div class="sol"><b>④解答　设 ∠BAD=x。</b> ∵AB=AC ∴∠C=∠B=20°；△ABD 中 ∠ADB=160°−x。<br>
-∵折叠 ∴∠ADB′=∠ADB=160°−x；∵邻补角 ∴∠ADC=20°+x。<br>
-∴∠B′DC=|∠ADC−∠ADB′|=|2x−140°|。∵B′D⊥BC ∴|2x−140°|=90° ⇒ <b>x=115° 或 25°</b>。
-<div class="ans">∠BAD = 115° 或 25°</div></div>
-<div class="alt"><b>【另解：抓"折痕平分角"，更快】</b>折叠 ⇒ AD 是 ∠BDB′ 的<b>平分线</b> ⇒ ∠ADB=½∠BDB′。<br>
-当 B′ 在 BC 上方：B′D⊥BC ⇒ ∠BDB′=90° ⇒ ∠ADB=45° ⇒ ∠BAD=180°−20°−45°=<b>115°</b>；<br>
-当 B′ 翻到另一侧：∠ADB=135° ⇒ ∠BAD=<b>25°</b>。<br>
-（两法同源，都靠"折叠⇒对称"；设 x 法更稳，自动含两解。）</div>
+<div class="sol"><b>④解答　设 ∠BAD=x。</b> ∵AB=AC ∴∠C=∠B=20°；△ABD 中 ∠ADB=180°−20°−x=160°−x。<br>
+∵折叠 ∴∠ADB′=∠ADB=160°−x；∵B、D、C 共线 ∴∠ADC=180°−∠ADB=20°+x；∵B′D⊥BC ∴∠B′DC=90°。<br>
+<b>下面按 B′ 的位置分两种情况，在图上把角"拼起来"：</b>
+<div style="display:flex;gap:10px;margin-top:6px;">
+<div style="flex:1;text-align:center;">
+<svg class="fig" viewBox="0 0 320 230" style="width:100%;max-width:240px;margin:4px auto;">
+  <line x1="160" y1="156" x2="40" y2="200"/><line x1="40" y1="200" x2="280" y2="200"/><line x1="280" y1="200" x2="160" y2="156"/>
+  <line x1="160" y1="156" x2="204" y2="200"/>
+  <line class="aux" x1="160" y1="156" x2="204" y2="36"/><line class="aux" x1="204" y1="200" x2="204" y2="36"/>
+  <path class="rt" d="M204 188 L216 188 L216 200"/><text x="218" y="182" class="red" style="font-size:9px">90°</text>
+  <path class="ang" d="M58 197 A16 16 0 0 0 55 185"/><text x="60" y="190" class="red" style="font-size:9px">20°</text>
+  <circle cx="160" cy="156" r="3"/><circle cx="40" cy="200" r="3"/><circle cx="280" cy="200" r="3"/><circle cx="204" cy="200" r="3"/><circle cx="204" cy="36" r="3"/>
+  <text x="156" y="150">A</text><text x="30" y="214">B</text><text x="284" y="214">C</text><text x="194" y="216">D</text><text x="210" y="40">B′</text>
+</svg>
+<div style="text-align:left;font-size:10.5pt;"><b>情况① B′ 在 BC 上方</b>（D 靠近 C）：图中 DB′ 在 ∠ADC <b>内部</b> ⇒ <b>∠ADB′＋∠B′DC＝∠ADC</b><br>(160°−x)＋90°＝20°＋x ⇒ <b>x＝115°</b></div>
+</div>
+<div style="flex:1;text-align:center;">
+<svg class="fig" viewBox="0 0 320 300" style="width:100%;max-width:240px;margin:4px auto;">
+  <line x1="160" y1="156" x2="40" y2="200"/><line x1="40" y1="200" x2="280" y2="200"/><line x1="280" y1="200" x2="160" y2="156"/>
+  <line x1="160" y1="156" x2="116" y2="200"/>
+  <line class="aux" x1="160" y1="156" x2="116" y2="276"/><line class="aux" x1="116" y1="200" x2="116" y2="276"/>
+  <path class="rt" d="M116 212 L128 212 L128 200"/><text x="130" y="220" class="red" style="font-size:9px">90°</text>
+  <path class="ang" d="M58 197 A16 16 0 0 0 55 185"/><text x="60" y="190" class="red" style="font-size:9px">20°</text>
+  <circle cx="160" cy="156" r="3"/><circle cx="40" cy="200" r="3"/><circle cx="280" cy="200" r="3"/><circle cx="116" cy="200" r="3"/><circle cx="116" cy="276" r="3"/>
+  <text x="156" y="150">A</text><text x="30" y="214">B</text><text x="284" y="214">C</text><text x="104" y="216">D</text><text x="98" y="284">B′</text>
+</svg>
+<div style="text-align:left;font-size:10.5pt;"><b>情况② B′ 在 BC 下方</b>（D 靠近 B）：图中 DC 在 ∠ADB′ <b>内部</b> ⇒ <b>∠ADB′＝∠ADC＋∠B′DC</b><br>160°−x＝(20°＋x)＋90° ⇒ <b>x＝25°</b></div>
+</div>
+</div>
+<div class="ans">∠BAD ＝ 115°（B′在上方）或 25°（B′在下方）；若书上图限定 B′ 在某一侧，就只取那一个。</div></div>
 
 <!-- ============ 题3 ============ -->
 <h2>题3　梯形求腰的范围</h2>
