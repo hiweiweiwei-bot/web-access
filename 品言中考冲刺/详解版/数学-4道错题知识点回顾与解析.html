@@ -141,8 +141,8 @@
 <div class="kp"><b class="h">①【知识点回顾】</b>　<span class="chk">□ 自查：能背出吗？</span>
 <ol>
 <li><b>等边三角形</b>：三边相等、三角 60°；对称轴=各边<b>垂直平分线</b>(也是中线/高/角平分线)。</li>
-<li><b>垂直平分线性质</b>：线上点到两端距离相等。<span class="key">(E 在 CD 上 ⇒ EA=EB)</span></li>
-<li><b>旋转性质</b>：旋转前后全等 ⇒ 对应边、角相等。<b>全等判定 SAS</b>。<b>内角和</b>=180°。</li>
+<li><b>垂直平分线的性质与判定</b>：线上点到两端等距（E 在 CD ⇒ EA=EB）；反之 <b>到两端等距的点在垂直平分线上</b>（题目所给材料，用来定位 F）。</li>
+<li><b>旋转性质</b>：旋转前后全等 ⇒ 对应边、角相等。<b>内角和</b>=180°。</li>
 </ol></div>
 <div class="q"><b class="no">题：</b>CD 是等边△ABC 的对称轴，E 是 CD 上动点，△ABE 顺时针旋转后与 △CBF 重合。(1) 旋转中心、角度？(2) 连 AF 交 CD 于 P，求 ∠APC，E 移动时是否变化？
 <svg class="fig" viewBox="0 0 320 240" style="width:56%;">
@@ -153,18 +153,19 @@
   <circle cx="70" cy="205" r="3"/><circle cx="230" cy="205" r="3"/><circle cx="150" cy="66" r="3"/><circle cx="150" cy="205" r="3"/><circle cx="150" cy="140" r="3"/><circle cx="246" cy="103" r="3"/><circle cx="150" cy="159" r="3"/>
   <text x="58" y="216">A</text><text x="234" y="216">B</text><text x="144" y="60">C</text><text x="150" y="220">D</text><text x="130" y="142">E</text><text x="250" y="103">F</text><text x="156" y="170" class="red">P</text>
 </svg></div>
-<div class="diag"><b>②考什么·卡在哪：</b>等边对称⇒EA=EB；旋转⇒一对全等，再凑第二对全等转移角。她常卡在：不知"对称轴=中垂线⇒EA=EB"；不会"用已知全等再配一对新全等"。</div>
+<div class="diag"><b>②考什么·卡在哪：</b>等边对称⇒EA=EB；旋转⇒CF=AE、BF=BE，凑出 <b>FB=FC</b>，再用"中垂线判定"定位 F。她常卡在：不知"对称轴=中垂线⇒EA=EB"；想不到用题目给的"<b>到两端等距⇒在中垂线上</b>"去定位 F。</div>
 <div class="think"><b>③为什么这么想　<span class="sig">触发信号</span></b>
 <ol style="margin:3px 0;">
-<li><b>求一个角 ⇒ 先把它放进一个三角形，用内角和</b>：∠APC=180°−∠PAC−∠PCA。先问"这角在哪个三角形里"。</li>
-<li>∠PCA 好求(=∠ACD=30°)，∠PAC=∠BAF 不好求 ⇒ <b>要证∠BAF等于某已知角，就找一个"含已知角、又能与△ABF全等"的三角形</b>。手里已有 BF=BE(旋转)、AB=CB(等边)，再凑出 ∠ABF=∠EBC，正好 SAS。</li>
-<li>"旋转 + 等边 + 等线段" ⇒ <b>优先想用全等转移边/角</b>。</li>
+<li><b>求一个角 ⇒ 先放进一个三角形用内角和</b>：∠APC=180°−∠PAC−∠PCA。∠PCA=∠ACD=30° 好求，难在 ∠PAC=∠FAC。</li>
+<li><b>题目开头给的材料是"到两端等距的点在垂直平分线上"——这是强烈暗示：去找"哪个点到两端距离相等"。</b>顺着算：CF=AE=EB=BF ⇒ <b>FB=FC</b> ⇒ F 在 BC 的垂直平分线上。</li>
+<li>又 AB=AC ⇒ A 也在 BC 的垂直平分线上 ⇒ <b>AF 就是从 A 出发的对称轴，平分 ∠BAC</b> ⇒ ∠FAC=30°。</li>
 </ol></div>
 <div class="sol"><b>④解答　(1)</b> 绕 B 把 A 转到相邻顶点 C ⇒ <b>旋转中心 B，旋转角 60°</b>。<br>
-<b>(2)</b> CD 是对称轴 ⇒ ∠ACD=∠BCD=30°、∠BAC=∠ABC=60°；E 在中垂线 CD 上 ⇒ EA=EB。<br>
-旋转 ⇒ △ABE≌△CBF ⇒ BE=BF、∠ABE=∠CBF。<br>
-∵∠ABF=∠ABC−∠CBF=60°−∠ABE=∠EBC，且 AB=CB、BF=BE ⇒ <b>△ABF≌△CBE(SAS)</b> ⇒ ∠BAF=∠BCE=∠BCD=30°。<br>
-∴∠PAC=60°−30°=30°，∠PCA=30°；△APC 中 ∠APC=180°−30°−30°=<b>120°</b>。
+<b>(2)</b> CD 是对称轴 ⇒ ∠ACD=30°、∠BAC=60°；E 在 AB 的中垂线 CD 上 ⇒ EA=EB。<br>
+由旋转 △ABE≌△CBF ⇒ CF=AE、BF=BE。<br>
+∴ CF=AE=EB=BF，即 <b>FB=FC</b>。<br>
+由"到两端距离相等的点在垂直平分线上"：F 在 BC 的垂直平分线上；又 AB=AC，A 也在 ⇒ <b>AF 就是 BC 的垂直平分线（从 A 出发的对称轴），平分 ∠BAC</b> ⇒ ∠PAC=∠FAC=30°。<br>
+又 ∠PCA=∠ACD=30°，△APC 中 ∠APC=180°−30°−30°=<b>120°</b>。
 <div class="ans">(1) B，60°　(2) ∠APC=120°，不变</div></div>
 
 <h2>★ 总结：知识点是根，方法靠"信号"触发</h2>
@@ -173,7 +174,7 @@
 <tr><td style="border:1px solid #999;padding:5px;">1</td><td style="border:1px solid #999;padding:5px;">平行线同旁内角互补；平移保持平行</td><td style="border:1px solid #999;padding:5px;">两平行线间拐点求角 → 过拐点作平行线</td></tr>
 <tr><td style="border:1px solid #999;padding:5px;">2</td><td style="border:1px solid #999;padding:5px;">折叠⇒对应角/边相等；分类讨论</td><td style="border:1px solid #999;padding:5px;">折叠+求角 → 设x列方程；遇动点/垂直→分类</td></tr>
 <tr><td style="border:1px solid #999;padding:5px;">3</td><td style="border:1px solid #999;padding:5px;">平行四边形性质；三角形三边关系</td><td style="border:1px solid #999;padding:5px;">梯形 → 作辅助线转化；求边范围→集中到三角形</td></tr>
-<tr><td style="border:1px solid #999;padding:5px;">4</td><td style="border:1px solid #999;padding:5px;">中垂线性质；旋转性质；SAS</td><td style="border:1px solid #999;padding:5px;">求角→放进三角形；要证角相等→再凑一对全等</td></tr>
+<tr><td style="border:1px solid #999;padding:5px;">4</td><td style="border:1px solid #999;padding:5px;">垂直平分线的判定与性质；旋转性质</td><td style="border:1px solid #999;padding:5px;">求角→放进三角形；出现"两段相等"→用中垂线判定定位点</td></tr>
 </table>
 <p style="text-align:center;color:#888;font-size:9pt;margin-top:10px;">— 先把"薄弱知识点"背牢，再把"触发信号"练成条件反射，这类题就通了 —</p>
 </body>
