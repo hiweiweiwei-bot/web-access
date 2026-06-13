@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>品言·4道错题 带图规范解析</title>
+<style>
+  @page { size: A4; margin: 1.6cm 1.5cm; }
+  body { font-family: "WenQuanYi Zen Hei", sans-serif; font-size: 11pt; line-height: 1.65; color: #1a1a1a; }
+  h1 { font-size: 19pt; color: #1558b0; border-bottom: 3px solid #1558b0; padding-bottom: 6px; margin-bottom:4px;}
+  h2 { font-size: 14pt; color: #fff; background: #1558b0; padding: 5px 10px; margin-top: 18px; page-break-after: avoid; }
+  .lead { background:#fffbe6; border:1px solid #f0d97a; padding:8px 12px; border-radius:6px; font-size:10.5pt;}
+  .q { background:#f5f9ff; border:1px solid #c5d9f5; border-radius:6px; padding:8px 12px; margin:9px 0;}
+  .q b.no{color:#1558b0;}
+  .sol{ background:#f4faf2; border-left:4px solid #4a9e3f; padding:8px 12px; margin:8px 0; page-break-inside:avoid;}
+  .sol b{color:#2e7d22;}
+  .mdl{ display:inline-block; background:#0b7a5b; color:#fff; font-size:9pt; padding:1px 7px; border-radius:3px;}
+  .ans{ background:#fff4ec; border:1px solid #f0a97a; border-radius:5px; padding:3px 8px; color:#c4521a; font-weight:bold; display:inline-block; margin-top:4px;}
+  .key{color:#c0392b;font-weight:bold;}
+  ol,ul{padding-left:20px;margin:4px 0;} li{margin:3px 0;}
+  svg.fig{display:block;margin:8px auto;width:60%;max-width:300px;border:1px solid #e3e3e3;border-radius:6px;background:#fcfdff;}
+  svg.fig line,svg.fig path{stroke:#1558b0;stroke-width:2;fill:none;}
+  svg.fig .aux{stroke:#c0392b;stroke-width:1.6;stroke-dasharray:6 4;}
+  svg.fig .thin{stroke:#8aa0b8;stroke-width:1.4;}
+  svg.fig .rt{stroke:#c0392b;stroke-width:1.4;fill:none;}
+  svg.fig .tk{stroke:#0b7a5b;stroke-width:2.2;}
+  svg.fig .ang{stroke:#8e44ad;stroke-width:1.7;fill:none;}
+  svg.fig circle{fill:#1558b0;}
+  svg.fig text{font-family:"WenQuanYi Zen Hei";font-size:11px;fill:#222;stroke:none;}
+  .red{fill:#c0392b !important;}
+</style>
+</head>
+<body>
+
+<h1>品言·4 道错题　带图规范解析</h1>
+<p class="lead">每道题先标"<b>用什么模型</b>"，再给<b>规范书写步骤</b>（∵∴ 格式，照着学）。重点不是答案，是<b>"为什么这样想 + 怎么写才不丢步骤分"</b>。</p>
+
+<!-- ============ 题1 ============ -->
+<h2>题1　平行线 + 平移 <span class="mdl">过拐点作平行线</span></h2>
+<div class="q"><b class="no">题：</b>AB、BC 被直线 AC 所截，∠B=72°，AE∥BC，D 在 AC 上，DE∥AB 交 AE 于 E。(1) 求∠E；(2) 将 AE 沿 AC 平移得 PQ，连 DQ：① ∠EDQ=45° 求∠Q；② ∠EDQ=90° 求∠Q；③ 是否存在 ∠EDQ=3∠Q？
+<svg class="fig" viewBox="0 0 320 250">
+  <line x1="95" y1="75" x2="40" y2="225"/><line x1="40" y1="225" x2="285" y2="225"/><line x1="95" y1="75" x2="285" y2="225"/>
+  <line x1="95" y1="75" x2="212" y2="75"/><line x1="188" y1="150" x2="212" y2="75"/>
+  <path class="ang" d="M52 219 A16 16 0 0 0 49 209"/><text x="55" y="212" class="red" style="font-size:10px">72°</text>
+  <circle cx="95" cy="75" r="3"/><circle cx="40" cy="225" r="3"/><circle cx="285" cy="225" r="3"/><circle cx="188" cy="150" r="3"/><circle cx="212" cy="75" r="3"/>
+  <text x="84" y="70">A</text><text x="30" y="238">B</text><text x="285" y="238">C</text><text x="178" y="148">D</text><text x="216" y="72">E</text>
+</svg>
+<div style="text-align:center;font-size:9pt;color:#666;margin-top:-4px;">图1</div></div>
+
+<div class="sol"><b>(1)</b> ∵ AE∥BC ∴ ∠BAE + ∠B = 180°（两直线平行，同旁内角互补）∴ ∠BAE = 108°。<br>
+∵ DE∥AB ∴ ∠AED + ∠BAE = 180°（同旁内角互补）∴ <b>∠E = ∠AED = 72°</b>。
+<div class="ans">∠E = 72°</div></div>
+
+<div class="sol"><b>(2) 关键辅助线：过 D 作 DM∥BC。</b>
+<svg class="fig" viewBox="0 0 320 240" style="width:66%;">
+  <line x1="150" y1="38" x2="150" y2="262"/>
+  <line class="aux" x1="72" y1="160" x2="300" y2="160"/>
+  <line x1="150" y1="160" x2="108" y2="62"/>
+  <line x1="150" y1="92" x2="250" y2="92"/>
+  <line x1="150" y1="160" x2="250" y2="92"/>
+  <text x="142" y="34">A</text><text x="142" y="276">C</text><text x="156" y="172">D</text><text x="132" y="92">P</text><text x="96" y="60">E</text><text x="254" y="92">Q</text><text x="303" y="164">M</text>
+  <circle cx="150" cy="160" r="3"/><circle cx="108" cy="62" r="3"/><circle cx="150" cy="92" r="3"/><circle cx="250" cy="92" r="3"/>
+  <text x="116" y="150" class="red" style="font-size:10px">72°</text>
+  <text x="170" y="120" style="font-size:10px;fill:#0b7a5b">∠EDQ</text>
+  <text x="225" y="84" style="font-size:10px;fill:#8e44ad">∠Q</text>
+</svg>
+∵ 平移 ∴ PQ∥AE，又 AE∥BC ∴ <b>PQ∥BC∥DM</b>。<br>
+① <b>DM∥BC、DE∥AB</b> ⇒ ∠MDE = ∠B = 72°（两边分别平行，夹角相等）；<b>DM∥PQ</b> ⇒ ∠MDQ = ∠Q（内错角）。<br>
+图2中 DQ 在 ∠MDE 内：∠EDQ = ∠MDE − ∠MDQ = 72° − ∠Q ⇒ ∠Q = 72° − 45° = <b>27°</b>。
+<div class="ans">① ∠Q = 27°</div></div>
+<div class="sol"><b>②</b> 图3中 ∠EDQ=90°>72°，此时 DM 在 ∠EDQ 内：∠EDQ = ∠MDE + ∠MDQ = 72° + ∠Q ⇒ ∠Q = 90° − 72° = <b>18°</b>。
+<div class="ans">② ∠Q = 18°</div></div>
+<div class="sol"><b>③</b> 由上，恒有 <b>∠Q = |∠EDQ − 72°|</b>。令 ∠EDQ = 3∠Q：<br>
+· 当 ∠EDQ < 72°：∠Q=72°−∠EDQ ⇒ ∠EDQ = 3(72°−∠EDQ) ⇒ <b>∠EDQ = 54°</b>；<br>
+· 当 ∠EDQ > 72°：∠Q=∠EDQ−72° ⇒ ∠EDQ = 3(∠EDQ−72°) ⇒ <b>∠EDQ = 108°</b>。
+<div class="ans">③ 存在，∠EDQ = 54° 或 108°</div></div>
+
+<!-- ============ 题2 ============ -->
+<h2>题2　折叠（轴对称）+ 分类讨论 <span class="mdl">折叠模型</span></h2>
+<div class="q"><b class="no">题：</b>△ABC 中 AB=AC，∠B=20°，D 是 BC 上动点，将三角形沿 AD 对折使 B 落在 B′，当 B′D⊥BC 时，求∠BAD。
+<svg class="fig" viewBox="0 0 340 230">
+  <line x1="170" y1="45" x2="45" y2="205"/><line x1="170" y1="45" x2="295" y2="205"/><line x1="45" y1="205" x2="295" y2="205"/>
+  <line x1="170" y1="45" x2="120" y2="205"/>
+  <line class="aux" x1="120" y1="205" x2="120" y2="120"/><line class="aux" x1="170" y1="45" x2="120" y2="120"/>
+  <path class="rt" d="M120 193 L132 193 L132 205"/>
+  <path class="ang" d="M58 199 A16 16 0 0 0 55 189"/><text x="60" y="193" class="red" style="font-size:10px">20°</text>
+  <circle cx="170" cy="45" r="3"/><circle cx="45" cy="205" r="3"/><circle cx="295" cy="205" r="3"/><circle cx="120" cy="205" r="3"/><circle cx="120" cy="120" r="3"/>
+  <text x="164" y="40">A</text><text x="35" y="218">B</text><text x="297" y="218">C</text><text x="112" y="222">D</text><text x="100" y="118">B′</text>
+</svg>
+<div style="text-align:center;font-size:9pt;color:#666;margin-top:-4px;">（B′ 为 B 沿 AD 折叠后的对应点；图为示意）</div></div>
+<div class="sol"><b>设 ∠BAD = x。</b><br>
+∵ AB=AC ∴ ∠C=∠B=20°。在 △ABD 中：∠ADB = 180°−∠B−∠BAD = 160°−x。<br>
+∵ 沿 AD 折叠 ∴ <b>∠ADB′ = ∠ADB = 160°−x</b>（折叠前后对应角相等）。<br>
+∵ B、D、C 共线 ∴ ∠ADC = 180°−∠ADB = 20°+x。<br>
+B′ 是 B 关于 AD 的对称点，DB′ 落在 DC 一侧，∴ ∠B′DC = |∠ADC − ∠ADB′| = |(20°+x) − (160°−x)| = |2x − 140°|。<br>
+∵ B′D⊥BC ∴ ∠B′DC = 90° ⇒ <b>|2x − 140°| = 90°</b> ⇒ 2x−140=90 或 2x−140=−90 ⇒ x=115° 或 x=25°。
+<div class="ans">∠BAD = 115° 或 25°（D 在不同位置，两解都成立）</div></div>
+
+<!-- ============ 题3 ============ -->
+<h2>题3　梯形求腰范围 <span class="mdl">平移一腰</span></h2>
+<div class="q"><b class="no">题：</b>梯形 ABCD 中 AD∥BC，AD=6，AB=7，BC=8，求 CD 的取值范围。
+<svg class="fig" viewBox="0 0 320 210">
+  <line x1="90" y1="60" x2="225" y2="60"/><line x1="60" y1="170" x2="240" y2="170"/>
+  <line x1="90" y1="60" x2="60" y2="170"/><line x1="225" y1="60" x2="240" y2="170"/>
+  <line class="aux" x1="225" y1="60" x2="195" y2="170"/>
+  <circle cx="90" cy="60" r="3"/><circle cx="225" cy="60" r="3"/><circle cx="60" cy="170" r="3"/><circle cx="240" cy="170" r="3"/><circle cx="195" cy="170" r="3"/>
+  <text x="80" y="55">A</text><text x="228" y="55">D</text><text x="48" y="184">B</text><text x="244" y="184">C</text><text x="186" y="186">E</text>
+  <text x="150" y="52" style="font-size:10px;fill:#888">AD=6</text><text x="135" y="190" style="font-size:10px;fill:#888">BC=8</text><text x="58" y="120" style="font-size:10px;fill:#888">AB=7</text><text x="242" y="120" style="font-size:10px;fill:#888">CD=?</text>
+</svg></div>
+<div class="sol"><b>过 D 作 DE∥AB 交 BC 于 E。</b><br>
+∵ AD∥BC（即 AD∥BE）且 DE∥AB ∴ 四边形 ABED 是平行四边形。<br>
+∴ DE = AB = 7，BE = AD = 6 ∴ EC = BC − BE = 8 − 6 = 2。<br>
+在 △DEC 中，由<b>三角形三边关系</b>：DE − EC < DC < DE + EC，即 7−2 < DC < 7+2。
+<div class="ans">5 < CD < 9</div></div>
+
+<!-- ============ 题4 ============ -->
+<h2>题4　等边三角形 + 旋转 <span class="mdl">旋转模型</span></h2>
+<div class="q"><b class="no">题：</b>CD 是等边△ABC 的对称轴，D 在 AB 上，E 是 CD 上动点，连 AE、BE，将 △ABE 顺时针旋转后与 △CBF 重合。(1) 旋转中心、角度？(2) 连 AF 交 CD 于 P，求 ∠APC，并判断 E 移动时是否变化。
+<svg class="fig" viewBox="0 0 320 240" style="width:64%;">
+  <line x1="70" y1="205" x2="230" y2="205"/><line x1="230" y1="205" x2="150" y2="66"/><line x1="150" y1="66" x2="70" y2="205"/>
+  <line x1="150" y1="66" x2="150" y2="205"/>
+  <line class="thin" x1="70" y1="205" x2="150" y2="140"/><line class="thin" x1="230" y1="205" x2="150" y2="140"/>
+  <line class="thin" x1="230" y1="205" x2="246" y2="103"/><line class="thin" x1="150" y1="66" x2="246" y2="103"/>
+  <line x1="70" y1="205" x2="246" y2="103"/>
+  <path class="rt" d="M150 193 L162 193 L162 205"/>
+  <circle cx="70" cy="205" r="3"/><circle cx="230" cy="205" r="3"/><circle cx="150" cy="66" r="3"/><circle cx="150" cy="205" r="3"/><circle cx="150" cy="140" r="3"/><circle cx="246" cy="103" r="3"/><circle cx="150" cy="159" r="3"/>
+  <text x="58" y="216">A</text><text x="234" y="216">B</text><text x="144" y="60">C</text><text x="150" y="220">D</text><text x="130" y="142">E</text><text x="250" y="103">F</text><text x="156" y="170" class="red">P</text>
+</svg></div>
+<div class="sol"><b>(1)</b> 绕顶点 B 把 A 转到相邻顶点 C，∴ <b>旋转中心是点 B，旋转角度 60°</b>。</div>
+<div class="sol"><b>(2)</b> 准备：等边△ABC 中 CD 是对称轴 ⇒ CD⊥AB、∠ACD=∠BCD=30°、∠BAC=∠ABC=60°；E 在 AB 的中垂线 CD 上 ⇒ EA=EB。<br>
+由旋转：△ABE≌△CBF ⇒ BE=BF，∠ABE=∠CBF。<br>
+<b>证 ∠BAF=30°：</b> ∵ ∠ABF=∠ABC−∠CBF=60°−∠ABE=∠EBC，且 AB=CB、BF=BE ∴ <b>△ABF≌△CBE（SAS）</b> ∴ ∠BAF=∠BCE。<br>
+∵ E 在 CD 上 ∴ ∠BCE=∠BCD=30° ∴ ∠BAF=30°。<br>
+<b>求 ∠APC：</b> P 在 AF 上 ⇒ ∠PAC=∠BAC−∠BAF=60°−30°=30°；P 在 CD 上 ⇒ ∠PCA=∠ACD=30°。<br>
+在 △APC 中：∠APC = 180° − ∠PAC − ∠PCA = 180° − 30° − 30° = <b>120°</b>。
+<div class="ans">(2) ∠APC = 120°，E 移动时大小不变（定值）</div></div>
+
+<h2>四道题速记</h2>
+<table style="border-collapse:collapse;width:100%;">
+<tr><td style="border:1px solid #999;padding:5px;">题1</td><td style="border:1px solid #999;padding:5px;">过拐点 D 作平行线，把角拆两半 ⇒ ∠Q=|∠EDQ−72°|</td></tr>
+<tr><td style="border:1px solid #999;padding:5px;">题2</td><td style="border:1px solid #999;padding:5px;">折叠⇒对应角相等；∠B′DC=|2x−140|=90 ⇒ 分类</td></tr>
+<tr><td style="border:1px solid #999;padding:5px;">题3</td><td style="border:1px solid #999;padding:5px;">过 D 作 DE∥AB ⇒ 平行四边形 + △DEC 三边关系</td></tr>
+<tr><td style="border:1px solid #999;padding:5px;">题4</td><td style="border:1px solid #999;padding:5px;">绕 B 转 60°⇒△ABF≌△CBE ⇒ ∠BAF=30°⇒∠APC=120°</td></tr>
+</table>
+<p style="text-align:center;color:#888;font-size:9pt;margin-top:12px;">— 4 道错题带图解析 完 —　建议按"模型"贴进品言的模型本</p>
+</body>
+</html>
