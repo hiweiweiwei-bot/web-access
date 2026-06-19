@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><title>晋江2025春·初一数学 24、25 题讲透解析</title>
+<style>
+  @page{size:A4;margin:1.6cm 1.5cm;}
+  body{font-family:"WenQuanYi Zen Hei",sans-serif;font-size:11pt;line-height:1.65;color:#1a1a1a;}
+  h1{font-size:18pt;color:#1558b0;border-bottom:3px solid #1558b0;padding-bottom:6px;margin-bottom:4px;}
+  h2{font-size:14pt;color:#fff;background:#1558b0;padding:5px 10px;margin-top:18px;page-break-after:avoid;}
+  h3{font-size:12pt;color:#1558b0;border-left:4px solid #1558b0;padding-left:8px;margin:12px 0 4px;page-break-after:avoid;}
+  .lead{background:#fffbe6;border:1px solid #f0d97a;padding:8px 12px;border-radius:6px;font-size:10.5pt;}
+  .kp{background:#eef4ff;border:1px solid #b9d2f7;border-radius:6px;padding:7px 11px;margin:7px 0;}
+  .kp b{color:#1558b0;}
+  .think{background:#f6eefc;border-left:4px solid #8e44ad;padding:7px 11px;margin:7px 0;}
+  .think b{color:#6a1b9a;}
+  .sol{background:#f4faf2;border-left:4px solid #4a9e3f;padding:7px 11px;margin:7px 0;page-break-inside:avoid;}
+  .sol b{color:#2e7d22;}
+  .ans{background:#fff4ec;border:1px solid #f0a97a;border-radius:5px;padding:3px 8px;color:#c4521a;font-weight:bold;display:inline-block;margin-top:3px;}
+  .sig{display:inline-block;background:#8e44ad;color:#fff;font-size:9pt;padding:0 6px;border-radius:3px;}
+  .key{color:#c0392b;font-weight:bold;}
+  ol,ul{padding-left:20px;margin:4px 0;}li{margin:2px 0;}
+  table{border-collapse:collapse;margin:6px 0;}td,th{border:1px solid #999;padding:3px 8px;font-size:10.5pt;}
+  svg.fig{display:block;margin:8px auto;width:54%;max-width:265px;border:1px solid #e3e3e3;border-radius:6px;background:#fcfdff;}
+  svg.fig line,svg.fig path{stroke:#1558b0;stroke-width:2;fill:none;}
+  svg.fig .aux{stroke:#c0392b;stroke-width:1.6;stroke-dasharray:6 4;}
+  svg.fig .rt{stroke:#c0392b;stroke-width:1.4;fill:none;}
+  svg.fig circle{fill:#1558b0;}
+  svg.fig text{font-family:"WenQuanYi Zen Hei";font-size:11px;fill:#222;stroke:none;}
+  .red{fill:#c0392b!important;}
+</style></head><body>
+
+<h1>第 24、25 题 · 讲透解析</h1>
+<p class="lead">晋江 2025 年春初一数学（压轴）。每题：<b>知识点 → 思路（触发信号）→ 规范解答</b>。本稿所有结论已用坐标 / 代入<b>独立验算</b>。</p>
+
+<!-- ================= 题24 ================= -->
+<h2>第 24 题　翻折 + 旋转</h2>
+<p style="font-size:10.5pt;"><b>题意</b>：△ABC 中 ∠ABC=90°，D 在 AC 上，将 △BCD 沿 BD 翻折得 △BED，BE 交直线 AC 于 F。</p>
+
+<div class="kp"><b>① 用到的知识点</b>：翻折(轴对称)⇒ 对应边相等、对应角相等（<b>DE=DC，BE=BC</b>，∠DBE=∠DBC，∠BDE=∠BDC）；三角形周长=三边和；三角形内角和与邻补角；旋转⇒ 保形（对应边角相等、旋转角）；平行线性质；角平分线。</div>
+
+<svg class="fig" viewBox="0 0 300 240">
+  <line x1="50" y1="60" x2="50" y2="210"/><line x1="50" y1="210" x2="260" y2="210"/><line x1="260" y1="210" x2="50" y2="60"/>
+  <line x1="50" y1="210" x2="155" y2="135"/><line x1="50" y1="210" x2="118" y2="11"/><line x1="155" y1="135" x2="118" y2="11"/>
+  <path class="rt" d="M50 198 L62 198 L62 210"/>
+  <circle cx="50" cy="60" r="3"/><circle cx="50" cy="210" r="3"/><circle cx="260" cy="210" r="3"/><circle cx="155" cy="135" r="3"/><circle cx="118" cy="11" r="3"/><circle cx="91" cy="90" r="3"/>
+  <text x="34" y="60">A</text><text x="38" y="224">B</text><text x="264" y="224">C</text><text x="160" y="138">D</text><text x="122" y="14">E</text><text x="76" y="92">F</text>
+</svg>
+<div style="text-align:center;font-size:9pt;color:#666;margin-top:-4px;">图1（F 在边 AC 上）</div>
+
+<h3>(1)① AB=3，BC=4，AC=5，求 △AFB 与 △EFD 的周长之和</h3>
+<div class="think"><b>思路　<span class="sig">触发信号</span></b>：周长是"一堆分散的线段和"，<b>看到翻折就把相等的边搬过去拼成整段</b>。<br>
+关键三处：① DE=DC（翻折）；② F 在 BE 上 ⇒ FB+FE=BE=BC；③ F、D 都在 AC 上 ⇒ AF+FD+DC=AC。</div>
+<div class="sol"><b>解</b>：两周长之和
+= (AF+FB+AB) + (EF+FD+DE)<br>
+= AB + (FB+EF) + (AF+FD+<span class="key">DE</span>)　〔DE=DC〕<br>
+= AB + <span class="key">BE</span> + (AF+FD+DC)　〔FB+EF=BE，AF+FD+DC=AC〕<br>
+= AB + BC + AC = 3 + 4 + 5 = <b>12</b>。
+<div class="ans">周长之和 = 12</div></div>
+
+<h3>(1)② 若 ∠ABD=∠ADB，说明：∠EDF=2∠CBD</h3>
+<div class="think"><b>思路　<span class="sig">触发信号</span></b>：要证"某角=2×某角"，<b>把两个角都用同一个字母表示</b>。设 ∠CBD=α，再用"翻折⇒对应角相等"+"邻补角"把 ∠EDF 也换算成含 α 的式子。</div>
+<div class="sol"><b>解</b>：设 ∠CBD=α。<br>
+翻折 ⇒ ∠DBE=∠DBC=α，∠BDE=∠BDC。<br>
+∵ ∠ABD=∠ABC−∠CBD=90°−α，又 ∠ABD=∠ADB ∴ <b>∠ADB=90°−α</b>。<br>
+∵ A、D、C 共线（邻补角）∴ ∠BDC=180°−∠ADB=<b>90°+α</b>，故 ∠BDE=90°+α。<br>
+∵ F 在射线 DA 上 ∴ ∠EDF=∠EDA=∠BDE−∠BDA=(90°+α)−(90°−α)=2α=<b>2∠CBD</b>。∎
+<div class="ans">∠EDF = 2∠CBD（已证）</div></div>
+
+<h3>(2) ∠BAC=θ，△BDE 绕 B 逆时针转 β 得 △BD′E′，直线 D′E′ 交直线 AB、AC 于 N、M。<br>是否存在 ∠ANM=∠AMN=½θ ？若存在求 ∠E′BC</h3>
+<div class="think"><b>思路（突破口）　<span class="sig">触发信号</span></b><br>
+① ∠ANM=∠AMN=½θ ⇒ △AMN 中两底角相等且都是 ½θ ⇒ 顶角 ∠MAN=180°−θ ⇒ 直线 D′E′ <b>同时与 AB、AC 都成 ½θ 角</b>。<br>
+② "<b>一条直线与一个角的两边各成 ½θ 角</b>" 的方向只有一个：<b>平行于 ∠BAC 的角平分线</b>（角平分线正好与两边各成 ½θ）。<br>
+③ 所以 <b>条件 ⟺ D′E′ ∥ ∠BAC 的角平分线</b>——这就把"存在性"变成"能否转到这个方向"。</div>
+<svg class="fig" viewBox="0 0 300 215" style="width:60%;max-width:290px;">
+  <line x1="120" y1="40" x2="55" y2="200"/><line x1="55" y1="200" x2="265" y2="200"/><line x1="265" y1="200" x2="120" y2="40"/>
+  <path class="rt" d="M55 188 L67 188 L67 200"/>
+  <line class="aux" x1="120" y1="40" x2="148" y2="200"/>
+  <line class="aux" x1="170" y1="5" x2="204" y2="196"/>
+  <circle cx="190" cy="117" r="2.6"/>
+  <text x="110" y="36">A</text><text x="44" y="214">B</text><text x="269" y="214">C</text>
+  <text x="118" y="213" style="font-size:8.5px;fill:#c0392b">∠A平分线</text>
+  <text x="207" y="150" style="font-size:9px;fill:#c0392b">D′E′</text>
+  <text x="178" y="115" style="font-size:9px">M</text>
+  <text x="150" y="95" style="font-size:8.5px;fill:#c0392b">两虚线平行</text>
+</svg>
+<div style="text-align:center;font-size:9pt;color:#666;margin-top:-4px;">图2示意：D′E′ ∥ ∠A 平分线 ⟹ ∠ANM=∠AMN=½θ</div>
+<div class="sol"><b>解（存在）</b>：由上，需 D′E′ ∥ ∠BAC 的平分线。<br>
+又旋转+翻折保形 ⇒ △BD′E′≌△BCD ⇒ <b>∠BE′D′=∠BCD=∠C=90°−θ，且 BE′=BC</b>。<br>
+由"D′E′ 的方向 = 平分线方向"与 ∠BE′D′=90°−θ 反推 BE′ 的方向，<b>D′E′ 平行于平分线有正、反两个朝向（差 180°）</b>，对应旋转到两个位置：
+<table>
+<tr><th>位置</th><th>∠E′BC</th></tr>
+<tr><td>朝向一</td><td><b>3θ/2</b></td></tr>
+<tr><td>朝向二</td><td><b>180°−3θ/2</b></td></tr>
+</table>
+（已用坐标对 θ=50°、40°、36° 逐一验证，且与 D 在 AC 上的具体位置<b>无关</b>。）
+<div class="ans">存在；∠E′BC = 3θ/2 或 180°−3θ/2</div></div>
+
+<!-- ================= 题25 ================= -->
+<h2>第 25 题　新定义 F(m)</h2>
+<div class="kp"><b>规则</b>：三位数 m 各位数字分别 ×7 取个位，得 x、y、z，F(m)=x²+y²+z²。<br>
+<b>用到的知识点</b>：数位表示（三位数=100×百+10×十+个）；整除与倍数；不等式定最大值；按定义计算。</div>
+
+<h3>(1) 求 F(135)</h3>
+<div class="sol">1×7=7（个位 7）；3×7=21（个位 1）；5×7=35（个位 5）⇒ x,y,z=7,1,5。<br>
+F(135)=7²+1²+5²=49+1+25=<b>75</b>。<div class="ans">F(135)=75</div></div>
+
+<h3>(2) t=100x+10y+z（1≤x&lt;y&lt;z≤9），交换个位与百位后的新数 − 原数 = 297，求 t 最大时的 F(t)</h3>
+<div class="think"><b>思路</b>：先用"<b>数位作差</b>"把条件变成关于 x、z 的简单关系，再在约束下让 t 最大。</div>
+<div class="sol">新数=100z+10y+x。新−原=(100z+x)−(100x+z)=99(z−x)=297 ⇒ <b>z−x=3</b>。<br>
+t 最大 ⇒ 百位 x 尽量大：z=x+3≤9 ⇒ x≤6，取 x=6，z=9；又 x&lt;y&lt;z 取 y 最大=8 ⇒ <b>t=689</b>。<br>
+F(689)：6×7=42→2，8×7=56→6，9×7=63→3 ⇒ F=2²+6²+3²=4+36+9=<b>49</b>。
+<div class="ans">t=689，F(t)=49</div></div>
+
+<h3>(3) p=<span style="text-decoration:overline">a3a</span>，q=<span style="text-decoration:overline">3b3</span>（2≤a≤7，2≤b≤7，p&gt;q），p−q 是<b>三位数</b>且能被 17 整除，求 F(p−q)</h3>
+<div class="think"><b>思路</b>：先把 p、q 用数位写成代数式，求出 p−q 的表达式；再用"<b>被 17 整除</b>"在小范围内试值。</div>
+<div class="sol">p=100a+30+a=101a+30；q=300+10b+3=303+10b。<br>
+p−q=(101a+30)−(303+10b)=<b>101a−10b−273</b>。<br>
+在 2≤a≤7、2≤b≤7、p&gt;q 内，使 p−q 为三位数且被 17 整除：逐一检验得唯一 <b>a=7，b=6</b>：<br>
+p=737，q=363，p−q=374=17×22（三位数，被 17 整除）✓。<br>
+F(374)：3×7=21→1，7×7=49→9，4×7=28→8 ⇒ F=1²+9²+8²=1+81+64=<b>146</b>。
+<div class="ans">F(p−q)=146</div></div>
+<p style="font-size:9.5pt;color:#888;">注：原卷此处若印作"二位数"则无解；只有按"<b>三位数</b>"才成立（p−q=374）。请以试卷为准，如确为二位数请告知，我再核。</p>
+
+<p style="text-align:center;color:#888;font-size:9pt;margin-top:12px;">— 24、25 题讲透解析 完　|　所有结论均经独立验算 —</p>
+</body></html>
