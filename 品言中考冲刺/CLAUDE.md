@@ -32,6 +32,8 @@
 
 > 一句话：**先验算、再画图自检、分类各画图、把每个条件标到图上**。做完这些再交，就是"讲透终稿"。
 
+- **G 费曼输出环节**：复盘流程第 7 步——每月复盘日最后 15 分钟，让品言把上月补的"洞"**讲回来**（知识点+例题）。讲不清=没真懂。出材料时可顺带给"她要讲什么"的提纲。
+
 ## 四、渲染中文 PDF 的方法（环境已具备）
 - 工具：Playwright Chromium 在 `/opt/pw-browsers`（`PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers`）；中文字体 **WenQuanYi Zen Hei**（HTML 正文与 `<svg> text` 的 font-family 都用它）。
 - 流程：写 HTML（含内联 SVG 图）→ 用 Node(CommonJS) `require` playwright，`page.pdf({format:'A4',printBackground:true})` → 用 python 校验页数且 `b'WenQuanYiZenHei' in pdf`（确认字体嵌入）→ **几何图必须再截 PNG 用 Read 自检**。
