@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><title>晋江2025春初一·24、25题 完整讲透</title>
+<style>
+  @page{size:A4;margin:1.6cm 1.5cm;}
+  body{font-family:"WenQuanYi Zen Hei",sans-serif;font-size:11pt;line-height:1.62;color:#1a1a1a;}
+  h1{font-size:18pt;color:#1558b0;border-bottom:3px solid #1558b0;padding-bottom:6px;margin-bottom:4px;}
+  h2{font-size:14pt;color:#fff;background:#1558b0;padding:5px 10px;margin-top:16px;page-break-after:avoid;}
+  h3{font-size:12pt;color:#1558b0;border-left:4px solid #1558b0;padding-left:8px;margin:11px 0 3px;page-break-after:avoid;}
+  .lead{background:#fffbe6;border:1px solid #f0d97a;padding:8px 12px;border-radius:6px;font-size:10.5pt;}
+  .kp{background:#eef4ff;border:1px solid #b9d2f7;border-radius:6px;padding:7px 11px;margin:7px 0;}
+  .kp b{color:#1558b0;}
+  .think{background:#f6eefc;border-left:4px solid #8e44ad;padding:7px 11px;margin:7px 0;} .think b{color:#6a1b9a;}
+  .sol{background:#f4faf2;border-left:4px solid #4a9e3f;padding:7px 11px;margin:7px 0;page-break-inside:avoid;} .sol b{color:#2e7d22;}
+  .ans{background:#fff4ec;border:1px solid #f0a97a;border-radius:5px;padding:3px 8px;color:#c4521a;font-weight:bold;display:inline-block;margin-top:3px;}
+  .card{background:#f6eefc;border:1px solid #d9b9f2;border-radius:6px;padding:7px 11px;margin:7px 0;page-break-inside:avoid;} .card b.t{color:#6a1b9a;}
+  .sig{display:inline-block;background:#8e44ad;color:#fff;font-size:9pt;padding:0 6px;border-radius:3px;}
+  .key{color:#c0392b;font-weight:bold;}
+  ol,ul{padding-left:20px;margin:4px 0;}li{margin:2px 0;}
+  table{border-collapse:collapse;margin:5px 0;}td,th{border:1px solid #999;padding:3px 8px;font-size:10.5pt;}
+  .flex{display:flex;gap:10px;}
+  svg{display:block;margin:4px auto;background:#fcfdff;border:1px solid #e3e3e3;border-radius:6px;}
+  svg line{stroke-width:2;fill:none;} svg .tri{stroke:#1558b0;} svg .rot{stroke:#0b7a5b;} svg .nm{stroke:#e67e22;stroke-width:2.3;}
+  svg .aux{stroke:#c0392b;stroke-width:1.5;stroke-dasharray:6 4;} svg .rt{stroke:#c0392b;stroke-width:1.4;fill:none;} svg .ang{stroke:#8e44ad;stroke-width:1.7;fill:none;}
+  svg circle{fill:#1558b0;} svg text{font-family:"WenQuanYi Zen Hei";font-size:11px;fill:#222;}
+  .red{fill:#c0392b!important;}.org{fill:#e67e22!important;}.grn{fill:#0b7a5b!important;}
+  .fig1{width:52%;max-width:255px;}
+</style></head><body>
+
+<h1>晋江 2025 春初一 · 第 24、25 题　完整讲透</h1>
+<p class="lead">本稿为整合<b>终稿</b>：题意 → 知识点 → 思路(触发信号) → 规范解答 → 精确配图 → 模型卡，无遗漏。所有结论均经坐标 / 代入<b>独立验算</b>，所有图均坐标精确并截图自检。</p>
+
+<!-- ===================== 题24 ===================== -->
+<h2>第 24 题　翻折 + 旋转（13 分）</h2>
+<p style="font-size:10.5pt;"><b>题意</b>：△ABC 中 ∠ABC=90°，D 在边 AC 上，将 △BCD 沿 BD 翻折得 △BED，BE 交直线 AC 于 F。</p>
+<div class="kp"><b>① 知识点</b>：翻折(轴对称)⇒ 对应边、对应角相等（<b>DE=DC，BE=BC，∠DBE=∠DBC，∠BDE=∠BDC</b>）；三角形周长=三边和；三角形内角和、邻补角；旋转⇒ 保形（对应边角相等）；平行线性质；角平分线性质。</div>
+<svg class="fig1" viewBox="0 0 300 240">
+  <line class="tri" x1="50" y1="60" x2="50" y2="210"/><line class="tri" x1="50" y1="210" x2="260" y2="210"/><line class="tri" x1="260" y1="210" x2="50" y2="60"/>
+  <line x1="50" y1="210" x2="155" y2="135" stroke="#1558b0" stroke-width="2"/><line x1="50" y1="210" x2="118" y2="11" stroke="#1558b0" stroke-width="2"/><line x1="155" y1="135" x2="118" y2="11" stroke="#1558b0" stroke-width="2"/>
+  <path class="rt" d="M50 198 L62 198 L62 210"/>
+  <circle cx="50" cy="60" r="3"/><circle cx="50" cy="210" r="3"/><circle cx="260" cy="210" r="3"/><circle cx="155" cy="135" r="3"/><circle cx="118" cy="11" r="3"/><circle cx="91" cy="90" r="3"/>
+  <text x="34" y="60">A</text><text x="38" y="224">B</text><text x="264" y="224">C</text><text x="160" y="138">D</text><text x="122" y="14">E</text><text x="76" y="92">F</text>
+</svg>
+<div style="text-align:center;font-size:9pt;color:#666;margin-top:-4px;">图1（F 在边 AC 上）</div>
+
+<h3>(1)① AB=3，BC=4，AC=5，求 △AFB 与 △EFD 的周长之和</h3>
+<div class="think"><b>触发信号 <span class="sig">翻折拼整段</span></b>：周长是分散线段之和，<b>用翻折相等边把它们拼成整段</b>。要点：DE=DC（翻折）；F 在 BE 上 ⇒ FB+FE=BE；F、D 在 AC 上 ⇒ AF+FD+DC=AC。</div>
+<div class="sol"><b>解</b>：两周长之和 = (AF+FB+AB)+(EF+FD+DE)<br>
+= AB + (FB+EF) + (AF+FD+<span class="key">DE</span>)　〔DE=DC〕<br>
+= AB + <span class="key">BE</span> + (AF+FD+DC)　〔FB+EF=BE=BC，AF+FD+DC=AC〕<br>
+= AB + BC + AC = 3+4+5 = <b>12</b>。<div class="ans">周长之和 = 12</div></div>
+
+<h3>(1)② 若 ∠ABD=∠ADB，说明：∠EDF=2∠CBD</h3>
+<div class="think"><b>触发信号 <span class="sig">设元</span></b>：证"某角=2×某角"，把两角都用同一字母表示。设 ∠CBD=α，用"翻折⇒对应角相等"+"邻补角"换算。</div>
+<div class="sol"><b>解</b>：设 ∠CBD=α。翻折 ⇒ ∠DBE=∠DBC=α，∠BDE=∠BDC。<br>
+∵ ∠ABD=∠ABC−∠CBD=90°−α，又 ∠ABD=∠ADB ∴ ∠ADB=90°−α。<br>
+∵ A、D、C 共线（邻补角）∴ ∠BDC=180°−∠ADB=90°+α ∴ ∠BDE=90°+α。<br>
+∵ F 在射线 DA 上 ∴ ∠EDF=∠EDA=∠BDE−∠BDA=(90°+α)−(90°−α)=2α=<b>2∠CBD</b>。∎
+<div class="ans">∠EDF = 2∠CBD（已证）</div></div>
+
+<h3>(2) ∠BAC=θ，△BDE 绕 B 逆时针转 β(0°&lt;β≤360°)得 △BD′E′，直线 D′E′ 交直线 AB、AC 于 N、M。是否存在 ∠ANM=∠AMN=½θ？若存在求 ∠E′BC</h3>
+<div class="think"><b>突破口 <span class="sig">等角 → 平行于角平分线</span></b>
+<ol style="margin:3px 0;">
+<li>∠ANM=∠AMN=½θ ⟹ △AMN 两底角都是 ½θ ⟹ 顶角 ∠MAN=180°−θ ⟹ 直线 D′E′ <b>与 AB、AC 各成 ½θ 角</b>。</li>
+<li>"与一个角两边各成 ½θ 角"的方向唯一：<b>平行于 ∠BAC 的角平分线</b>。∴ <b>条件 ⟺ D′E′ ∥ ∠BAC 的角平分线</b>。</li>
+</ol></div>
+<div class="sol"><b>求 ∠E′BC：</b>
+<ol style="margin:3px 0;">
+<li>设 ∠BAC 的平分线交 BC 于 L。Rt△ABL 中 ∠ABL=90°、∠BAL=½θ ⟹ ∠ALB=90°−½θ，即<b>角平分线（从而 D′E′）与 BC 成 (90°−½θ) 角</b>。</li>
+<li>旋转+翻折保形 ⟹ △BD′E′≌△BCD ⟹ <b>∠BE′D′=∠BCD=∠C=90°−θ</b>，且 BE′=BC。即在 E′ 处，<b>BE′ 与直线 D′E′ 成 (90°−θ) 角</b>。</li>
+<li>于是 BE′ 与 BC 的夹角 = (90°−½θ) + (90°−θ) = <b>180°−3θ/2</b>（一种朝向，下左图）；另一朝向取其补角 = <b>3θ/2</b>（下右图）。</li>
+</ol>
+<div class="ans">存在；∠E′BC = 3θ/2 或 180°−3θ/2</div></div>
+
+<p style="font-size:10pt;margin:6px 0 0;"><b>精确配图（取 θ=50°：½θ=25°，3θ/2=75°）</b>　<span style="color:#1558b0;">蓝=△ABC</span>，<span style="color:#0b7a5b;">绿=旋转后△BD′E′</span>，<span style="color:#e67e22;">橙=直线D′E′(过N、M)</span>，<span style="color:#c0392b;">红虚=∠A平分线</span>。两图中橙线都与红虚线平行，∠ANM=∠AMN=25°。</p>
+<div class="flex">
+<div style="flex:1;text-align:center;">
+<svg viewBox="0 0 250 320" style="width:100%;max-width:225px;">
+  <line class="tri" x1="151" y1="131" x2="151" y2="188"/><line class="tri" x1="151" y1="188" x2="219" y2="188"/><line class="tri" x1="219" y1="188" x2="151" y2="131"/>
+  <path class="rt" d="M151 176 L163 176 L163 188"/>
+  <line class="aux" x1="151" y1="131" x2="178" y2="188"/>
+  <line class="nm" x1="28" y1="28" x2="151" y2="292"/>
+  <line class="rot" x1="151" y1="188" x2="115" y2="214"/><line class="rot" x1="151" y1="188" x2="133" y2="254"/>
+  <path class="ang" d="M179 188 A28 28 0 0 1 144 215"/><text x="158" y="214" class="red" style="font-size:11px">105°</text>
+  <circle cx="151" cy="131" r="3"/><circle cx="151" cy="188" r="3"/><circle cx="219" cy="188" r="3"/><circle cx="115" cy="214" r="3"/><circle cx="133" cy="254" r="3"/><circle cx="151" cy="292" r="3"/><circle cx="28" cy="28" r="3"/>
+  <text x="136" y="130">A</text><text x="138" y="202">B</text><text x="222" y="202">C</text><text x="96" y="216" class="grn">D′</text><text x="114" y="262" class="grn">E′</text><text x="155" y="304">N</text><text x="14" y="26" class="org">M</text>
+</svg>
+<b style="font-size:10pt;">位置①　∠E′BC=105°(=180°−3θ/2)</b>
+</div>
+<div style="flex:1;text-align:center;">
+<svg viewBox="0 0 250 300" style="width:100%;max-width:225px;">
+  <line class="tri" x1="28" y1="137" x2="28" y2="272"/><line class="tri" x1="28" y1="272" x2="188" y2="272"/><line class="tri" x1="188" y1="272" x2="28" y2="137"/>
+  <path class="rt" d="M28 260 L40 260 L40 272"/>
+  <line class="aux" x1="28" y1="137" x2="91" y2="272"/>
+  <line class="nm" x1="28" y1="28" x2="114" y2="212"/>
+  <line class="rot" x1="28" y1="272" x2="114" y2="212"/><line class="rot" x1="28" y1="272" x2="70" y2="117"/>
+  <path class="ang" d="M60 272 A32 32 0 0 0 36 241"/><text x="44" y="258" class="red" style="font-size:11px">75°</text>
+  <circle cx="28" cy="137" r="3"/><circle cx="28" cy="272" r="3"/><circle cx="188" cy="272" r="3"/><circle cx="114" cy="212" r="3"/><circle cx="70" cy="117" r="3"/><circle cx="28" cy="28" r="3"/><circle cx="112" cy="208" r="2.6"/>
+  <text x="12" y="140">A</text><text x="16" y="286">B</text><text x="190" y="286">C</text><text x="120" y="218" class="grn">D′</text><text x="52" y="114" class="grn">E′</text><text x="14" y="26">N</text><text x="96" y="204" class="org">M</text>
+</svg>
+<b style="font-size:10pt;">位置②　∠E′BC=75°(=3θ/2)</b>
+</div>
+</div>
+
+<!-- ===================== 题25 ===================== -->
+<h2>第 25 题　新定义 F(m)（13 分）</h2>
+<div class="kp"><b>规则</b>：三位数 m 各位数字分别 ×7 取个位，得 x、y、z，<b>F(m)=x²+y²+z²</b>。（例 631→2,1,7→F=2²+1²+7²=54）<br>
+<b>知识点</b>：数位表示（三位数=100×百+10×十+个）；整除与倍数；不等式定最大值；按定义计算。</div>
+
+<h3>(1) 求 F(135)</h3>
+<div class="sol">1×7=7→7；3×7=21→1；5×7=35→5 ⇒ x,y,z=7,1,5。F(135)=7²+1²+5²=49+1+25=<b>75</b>。
+<div class="ans">F(135)=75</div></div>
+
+<h3>(2) t=100x+10y+z（1≤x&lt;y&lt;z≤9），交换个位与百位后的新数 − 原数 = 297，求 t 最大时的 F(t)</h3>
+<div class="think"><b>触发信号 <span class="sig">数位作差</span></b>：把条件化成 x、z 的简单关系，再在约束下让 t 最大（先大百位）。</div>
+<div class="sol">新数=100z+10y+x。新−原=99(z−x)=297 ⇒ <b>z−x=3</b>。<br>
+t 最大 ⇒ 百位 x 尽量大：z=x+3≤9 ⇒ x≤6，取 x=6、z=9；又 x&lt;y&lt;z 取 y 最大=8 ⇒ <b>t=689</b>。<br>
+F(689)：6×7=42→2，8×7=56→6，9×7=63→3 ⇒ F=2²+6²+3²=4+36+9=<b>49</b>。
+<div class="ans">t=689，F(t)=49</div></div>
+
+<h3>(3) p=<span style="text-decoration:overline">a3a</span>，q=<span style="text-decoration:overline">3b3</span>（2≤a≤7，2≤b≤7，p&gt;q），p−q 是<b>三位数</b>且能被 17 整除，求 F(p−q)</h3>
+<div class="think"><b>触发信号 <span class="sig">数位代数化 + 试值</span></b>：把 p、q 用数位写成代数式求 p−q；再用"被 17 整除"在小范围内试值。</div>
+<div class="sol">p=100a+30+a=101a+30；q=300+10b+3=303+10b。<br>
+p−q=(101a+30)−(303+10b)=<b>101a−10b−273</b>。<br>
+在 2≤a≤7、2≤b≤7、p&gt;q 内，使 p−q 为三位数且被 17 整除，逐一检验得唯一 <b>a=7、b=6</b>：<br>
+p=737，q=363，p−q=374=<b>17×22</b>（三位数，被 17 整除）✓。<br>
+F(374)：3×7=21→1，7×7=49→9，4×7=28→8 ⇒ F=1²+9²+8²=1+81+64=<b>146</b>。
+<div class="ans">F(p−q)=146</div></div>
+
+<!-- ===================== 模型卡 ===================== -->
+<h2>附：模型卡（贴进模型本）</h2>
+<div class="card"><b class="t">翻折（轴对称）</b>　<b>知识点</b>：翻折前后全等 ⇒ 对应边、对应角相等。<b>触发信号</b>：见"翻折/对折"→ 写对应相等；求"周长/线段和"→ 拼成整段；求"某角=2×某角"→ 设元。</div>
+<div class="card"><b class="t">旋转</b>　<b>知识点</b>：旋转前后全等 ⇒ 对应边、对应角相等；对应点到中心距离相等（BE′=BC）。<b>触发信号</b>：见"绕…旋转"→ 标对应相等、找等线段。</div>
+<div class="card"><b class="t">等角 → 平行于角平分线（本题精髓）</b>　<b>知识点</b>：一条直线与一个角两边各成 ½θ 角 ⟺ 平行于该角的平分线。<b>触发信号</b>：出现"∠ANM=∠AMN"（截线与角两边等角）→ 想"平行于角平分线"，把存在性化为方向问题。</div>
+<div class="card"><b class="t">新定义题</b>　<b>触发信号</b>：① 严格按定义、照例子先做一遍；② 数位用 100a+10b+c 代数化、作差化简；③ 求最大值用不等式逐位取大；④ "被某数整除"在小范围试值。</div>
+
+<p style="text-align:center;color:#888;font-size:9pt;margin-top:10px;">— 第 24、25 题完整讲透（终稿）　|　结论均经独立验算，图坐标精确并截图自检 —</p>
+</body></html>

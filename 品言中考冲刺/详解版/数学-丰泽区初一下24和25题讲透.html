@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><title>丰泽区初一下·24、25题讲透</title>
+<style>
+  @page{size:A4;margin:1.6cm 1.5cm;}
+  body{font-family:"WenQuanYi Zen Hei",sans-serif;font-size:11pt;line-height:1.62;color:#1a1a1a;}
+  h1{font-size:18pt;color:#1558b0;border-bottom:3px solid #1558b0;padding-bottom:6px;margin-bottom:4px;}
+  h2{font-size:14pt;color:#fff;background:#1558b0;padding:5px 10px;margin-top:16px;page-break-after:avoid;}
+  h3{font-size:12pt;color:#1558b0;border-left:4px solid #1558b0;padding-left:8px;margin:11px 0 3px;page-break-after:avoid;}
+  .lead{background:#fffbe6;border:1px solid #f0d97a;padding:8px 12px;border-radius:6px;font-size:10.5pt;}
+  .kp{background:#eef4ff;border:1px solid #b9d2f7;border-radius:6px;padding:7px 11px;margin:7px 0;} .kp b{color:#1558b0;}
+  .think{background:#f6eefc;border-left:4px solid #8e44ad;padding:7px 11px;margin:7px 0;} .think b{color:#6a1b9a;}
+  .sol{background:#f4faf2;border-left:4px solid #4a9e3f;padding:7px 11px;margin:7px 0;page-break-inside:avoid;} .sol b{color:#2e7d22;}
+  .ans{background:#fff4ec;border:1px solid #f0a97a;border-radius:5px;padding:3px 8px;color:#c4521a;font-weight:bold;display:inline-block;margin-top:3px;}
+  .warn{background:#fdecea;border-left:4px solid #c0392b;padding:6px 10px;margin:6px 0;font-size:10.5pt;} .warn b{color:#c0392b;}
+  .sig{display:inline-block;background:#8e44ad;color:#fff;font-size:9pt;padding:0 6px;border-radius:3px;}
+  .key{color:#c0392b;font-weight:bold;}
+  ol,ul{padding-left:20px;margin:3px 0;}li{margin:2px 0;}
+  table{border-collapse:collapse;margin:5px 0;}td,th{border:1px solid #999;padding:3px 8px;font-size:10.5pt;}
+  .flex{display:flex;gap:10px;}
+  svg{display:block;margin:5px auto;background:#fcfdff;border:1px solid #e3e3e3;border-radius:6px;}
+  svg line,svg path{stroke:#1558b0;stroke-width:2;fill:none;}
+  svg .aux{stroke:#c0392b;stroke-width:1.6;stroke-dasharray:6 4;}
+  svg .tk{stroke:#0b7a5b;stroke-width:2.2;}
+  svg .rt{stroke:#c0392b;stroke-width:1.4;fill:none;}
+  svg .hsl{stroke:#0b7a5b;stroke-width:6;stroke-linecap:round;opacity:.85;}
+  svg circle{fill:#1558b0;}
+  svg text{font-family:"WenQuanYi Zen Hei";font-size:11px;fill:#222;}
+  .red{fill:#c0392b!important;} .grn{fill:#0b7a5b!important;}
+</style></head><body>
+
+<h1>丰泽区初一下 · 第 24、25 题　讲透</h1>
+<p class="lead">四段式：知识点(自查) → 卡在哪 → 触发信号 → 规范解答。<b>所有答案已用坐标/代入独立验算。</b></p>
+
+<!-- ============ 24 ============ -->
+<h2>第 24 题　对称 + 角度 + 面积（12 分）</h2>
+<p style="font-size:10.5pt;"><b>题意</b>：Rt△ABC，∠ACB=90°，D 为<b>射线 AB</b> 上一点。</p>
+<div class="kp"><b>①知识点自查</b>　□ 对称(翻折)⇒对应边、角相等　□ 三角形内角和/外角　□ 等腰"等边对等角"　□ 同高三角形面积比=底之比　□ "射线上一点"⇒可能在线段上、也可能在延长线上(<b>分类!</b>)</div>
+
+<h3>(1)① B 关于直线 CD 的对称点 B′ 恰落在 AC 上，∠A=α，求 ∠ADB′</h3>
+<div class="flex"><div style="flex:1.1;">
+<div class="think"><b>信号 <span class="sig">对称⇒藏着45°</span></b><br>
+C 在对称轴 CD 上 ⇒ <b>CB′=CB 且 ∠B′CD=∠BCD</b>。B′ 在 AC 上、∠B′CB=90° ⇒ ∠BCD=∠B′CD=<b>45°</b>——"恰好落在AC上"这句话就是在送你 45°。<br>再由 DB′=DB ⇒ △DBB′… 更快的是用<b>等腰∠DB′C=∠DBC</b> 转角。</div>
+<div class="sol"><b>解</b>：由对称：DB′=DB，∠DB′C=∠DBC=∠ABC=90°−α。<br>
+∠AB′D 与 ∠DB′C 互补 ⇒ ∠AB′D=180°−(90°−α)=90°+α。<br>
+△AB′D 中：∠ADB′=180°−∠A−∠AB′D=180°−α−(90°+α)
+<div class="ans">∠ADB′ = 90°−2α</div></div>
+</div><div style="flex:0.9;">
+<svg viewBox="0 0 250 260" style="width:96%;">
+  <line x1="45" y1="230" x2="45" y2="40"/><line x1="45" y1="230" x2="155" y2="230"/><line x1="45" y1="40" x2="155" y2="230"/>
+  <line class="aux" x1="45" y1="230" x2="140" y2="135"/>
+  <line x1="114" y1="160" x2="45" y2="120"/>
+  <path class="rt" d="M45 218 L57 218 L57 230"/>
+  <line class="tk" x1="42" y1="172" x2="52" y2="177"/><line class="tk" x1="96" y1="228" x2="101" y2="218"/>
+  <circle cx="45" cy="40" r="3"/><circle cx="45" cy="230" r="3"/><circle cx="155" cy="230" r="3"/><circle cx="114" cy="160" r="3"/><circle cx="45" cy="120" r="3"/>
+  <text x="33" y="40">A</text><text x="31" y="245">C</text><text x="159" y="245">B</text><text x="120" y="158">D</text><text x="26" y="122">B′</text>
+  <text x="52" y="58" class="red" style="font-size:10px">α</text>
+  <text x="62" y="222" class="red" style="font-size:9px">45°45°</text>
+</svg></div></div>
+
+<h3>(1)② 若 AD=2BD，求 AC 与 BC 的数量关系</h3>
+<div class="think"><b>信号 <span class="sig">线段比 ⇒ 面积桥</span></b>：AD:BD 出现 ⇒ 想"<b>同高三角形，面积比=底之比</b>"（从 C 看 AB）。CD 是 45° 平分线 ⇒ D 到 CA、CB 的<b>距离相等</b>（设为 d）——再从两条直角边当底各算一次面积。</div>
+<div class="sol"><b>解</b>：S<sub>△ACD</sub> : S<sub>△BCD</sub> = AD : BD = 2 : 1（同一条高，从 C 到 AB）。<br>
+又 D 在 ∠ACB 的平分线上（①已得 45°）⇒ D 到 CA、CB 距离相等，记 d：<br>
+S<sub>△ACD</sub>=½·AC·d，S<sub>△BCD</sub>=½·BC·d ⇒ S 比 = AC : BC。<br>
+∴ AC : BC = 2 : 1。
+<div class="ans">AC = 2BC</div></div>
+
+<h3>(2) E 在 AC 上，BD=⅓AB，S<sub>△ADE</sub>:S<sub>△ACB</sub>=m，AC=n，求 AE</h3>
+<div class="warn"><b>先看到坑：D 在"射线 AB"上 + 只给 BD=⅓AB ⇒ D 有两个位置</b>（AB 上 / B 的延长线上）——这就是给"备用图"的原因。和折叠题一样：<b>见"射线/动点"就分类，每类画一张图。</b></div>
+<div class="think"><b>信号 <span class="sig">共角三角形面积链</span></b>：△ADE 与 △ACB 共 ∠A，两边分别落在 AB、AC 上 ⇒ 用两步"同高比"串起来：<br>
+S<sub>△ADE</sub>/S<sub>△ABE</sub> = AD/AB（从 E 看，底在 AB 上）；S<sub>△ABE</sub>/S<sub>△ACB</sub> = AE/AC（从 B 看，底在 AC 上）。<br>
+相乘 ⇒ <b>S<sub>△ADE</sub>/S<sub>△ACB</sub> = (AD/AB)·(AE/AC)</b>。</div>
+<div class="flex">
+<div style="flex:1;text-align:center;">
+<svg viewBox="0 0 250 230" style="width:92%;">
+  <line x1="55" y1="30" x2="55" y2="195"/><line x1="55" y1="195" x2="215" y2="195"/><line x1="55" y1="30" x2="215" y2="195"/>
+  <circle cx="55" cy="30" r="3"/><circle cx="55" cy="195" r="3"/><circle cx="215" cy="195" r="3"/>
+  <circle cx="161" cy="140" r="3"/><circle cx="55" cy="105" r="3"/>
+  <line class="aux" x1="55" y1="105" x2="161" y2="140"/>
+  <line class="tk" x1="186" y1="164" x2="196" y2="172"/>
+  <text x="43" y="28">A</text><text x="41" y="210">C</text><text x="219" y="210">B</text><text x="167" y="137">D</text><text x="38" y="108">E</text>
+  <text x="150" y="185" class="grn" style="font-size:9px">BD=⅓AB</text>
+</svg>
+<b style="font-size:10pt;">情况① D 在线段 AB 上：AD=⅔AB</b>
+</div>
+<div style="flex:1;text-align:center;">
+<svg viewBox="0 0 250 230" style="width:92%;">
+  <line x1="55" y1="30" x2="55" y2="160"/><line x1="55" y1="160" x2="175" y2="160"/><line x1="55" y1="30" x2="175" y2="160"/>
+  <line class="aux" x1="175" y1="160" x2="215" y2="203"/>
+  <circle cx="55" cy="30" r="3"/><circle cx="55" cy="160" r="3"/><circle cx="175" cy="160" r="3"/><circle cx="215" cy="203" r="3"/><circle cx="55" cy="100" r="3"/>
+  <line class="aux" x1="55" y1="100" x2="215" y2="203"/>
+  <line class="tk" x1="192" y1="178" x2="200" y2="186"/>
+  <text x="43" y="28">A</text><text x="41" y="175">C</text><text x="170" y="150">B</text><text x="220" y="205">D</text><text x="38" y="103">E</text>
+  <text x="196" y="172" class="grn" style="font-size:9px">BD=⅓AB</text>
+</svg>
+<b style="font-size:10pt;">情况② D 在 AB 延长线上：AD=⁴⁄₃AB</b>
+</div></div>
+<div class="sol"><b>解</b>：由面积链 m = (AD/AB)·(AE/n)。<br>
+情况①：AD=AB−BD=⅔AB ⇒ m=⅔·AE/n ⇒ <b>AE=3mn/2</b>；<br>
+情况②：AD=AB+BD=⁴⁄₃AB ⇒ m=⁴⁄₃·AE/n ⇒ <b>AE=3mn/4</b>。
+<div class="ans">AE = 3mn/2（D 在 AB 上）或 3mn/4（D 在延长线上）</div></div>
+
+<!-- ============ 25 ============ -->
+<h2>第 25 题　新定义"海丝数"（14 分）</h2>
+<div class="kp"><b>①知识点自查</b>　□ 数轴上两点距离 AB=|a−b|　□ 解二元一次方程组(消元)　□ 解一元一次不等式(组)　□ 不等式两边乘除负数变号　□ 新定义题：先把定义翻译成自己的话</div>
+<div class="think"><b>信号 <span class="sig">新定义→先翻译成区间</span></b>：b 是海丝数 ⟺ 存在 a∈[0,2] 使 |b−a|=2 ⟺ b=a+2 或 a−2 ⟺ <b>b∈[−2,0] 或 [2,4]</b>。先把这条数轴画出来，后面三问全在它上面做。</div>
+<svg viewBox="0 0 560 80" style="width:88%;max-width:520px;">
+  <line x1="20" y1="45" x2="540" y2="45"/>
+  <line class="hsl" x1="140" y1="45" x2="260" y2="45"/>
+  <line class="hsl" x1="380" y1="45" x2="500" y2="45"/>
+  <g>
+    <line x1="80" y1="40" x2="80" y2="50"/><line x1="140" y1="40" x2="140" y2="50"/><line x1="200" y1="40" x2="200" y2="50"/><line x1="260" y1="40" x2="260" y2="50"/><line x1="320" y1="40" x2="320" y2="50"/><line x1="380" y1="40" x2="380" y2="50"/><line x1="440" y1="40" x2="440" y2="50"/><line x1="500" y1="40" x2="500" y2="50"/>
+  </g>
+  <text x="74" y="68">−3</text><text x="134" y="68">−2</text><text x="194" y="68">−1</text><text x="256" y="68">0</text><text x="316" y="68">1</text><text x="376" y="68">2</text><text x="436" y="68">3</text><text x="496" y="68">4</text>
+  <text x="168" y="30" class="grn" style="font-size:10px">海丝数区</text><text x="408" y="30" class="grn" style="font-size:10px">海丝数区</text>
+</svg>
+<p style="text-align:center;font-size:9pt;color:#666;margin-top:-2px;">海丝整数共 6 个：−2，−1，0，2，3，4</p>
+
+<h3>(1) −2.5，0，4.2 中的海丝数</h3>
+<div class="sol">对照数轴：−2.5∉、0∈[−2,0] ✓、4.2∉。<div class="ans">0（她答对了 ✓）</div></div>
+
+<h3>(2) 方程组 3x+2y=m+7，x−y=2m+14；x、y 均为海丝数，求整数 m 所有取值之和</h3>
+<div class="think"><b>信号</b>：先<b>解出 x、y（用 m 表示）</b>，再套海丝区间。</div>
+<div class="sol"><b>解</b>：由第二式 x=y+2m+14，代入第一式：5y=−5m−35 ⇒ <b>y=−m−7，x=m+7</b>（恰有 y=−x）。<br>
+x 与 −x 都要是海丝数：x∈[−2,0]∪[2,4] 且 −x∈[−2,0]∪[2,4] ⇒ x∈{−2, 0, 2}。<br>
+x=m+7 ⇒ m=−9、−7、−5（对应 y=2、0、−2，均在区内 ✓）。
+<div class="ans">和 = (−9)+(−7)+(−5) = −21</div></div>
+
+<h3>(3) 不等式组解集恰有 4 个海丝整数，c+d=−1，d≤−½，求 2c+3d 最大值</h3>
+<div class="think"><b>信号</b>：①先解不等式组（含参 c 的留成端点）；②"恰好 4 个"→在数轴上<b>卡端点范围</b>；③最值→把 2c+3d 化成单变量。</div>
+<div class="sol"><b>解</b>：第一式 (x−1)/2＞x−4 ⇒ x−1＞2x−8 ⇒ <b>x＜7</b>；<br>
+第二式 (x+2)/3≤x−2c ⇒ x+2≤3x−6c ⇒ <b>x≥3c+1</b>。解集：3c+1≤x＜7。<br>
+6 个海丝整数都＜7，要"恰好 4 个"落在 [3c+1, 7) ⇒ 留下的必是最大的 4 个 {0,2,3,4}，且 −1 被排除：<br>
+<b>−1＜3c+1≤0</b> ⇒ −⅔＜c≤−⅓。<br>
+又 d=−1−c 且 d≤−½ ⇒ −1−c≤−½ ⇒ <b>c≥−½</b>。∴ c∈[−½, −⅓]。<br>
+2c+3d=2c+3(−1−c)=<b>−c−3</b>，c 越小越大 ⇒ c=−½ 时最大：−(−½)−3=−5/2。<br>
+检验：c=−½ ⇒ 端点 3c+1=−½，区内海丝整数 {0,2,3,4} 恰 4 个 ✓；d=−½≤−½ ✓。
+<div class="ans">2c+3d 的最大值 = −5/2</div></div>
+
+<h2>本卷两题的"模型收纳"</h2>
+<table style="width:100%;">
+<tr><th>题</th><th>薄弱知识点(先补)</th><th>触发信号(练成反射)</th></tr>
+<tr><td>24①</td><td>对称⇒等边等角；内角和</td><td>"恰好落在…上" ⇒ 隐藏条件(这里是45°)</td></tr>
+<tr><td>24②(2)</td><td>同高三角形面积比=底之比</td><td>线段比/面积比互转——"面积桥"；<b>共角双三角形：面积比=两边乘积之比</b></td></tr>
+<tr><td>24(2)</td><td>——</td><td><b>"射线上一点"+给的是BD ⇒ 分两类各画图</b>(备用图=分类讨论的暗示)</td></tr>
+<tr><td>25</td><td>数轴距离=|a−b|；不等式端点</td><td>新定义 ⇒ 先翻译成区间画数轴；"恰好N个整数解" ⇒ 卡端点</td></tr>
+</table>
+<p style="text-align:center;color:#888;font-size:9pt;margin-top:10px;">— 24、25 题讲透 完　|　全部结论经代码独立验算；图形坐标精确 —</p>
+</body></html>

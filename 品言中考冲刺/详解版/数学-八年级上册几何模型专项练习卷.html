@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>数学·八年级上册 几何模型专项练习卷（配图+解析）</title>
+<style>
+  @page { size: A4; margin: 1.6cm 1.5cm; }
+  body { font-family: "WenQuanYi Zen Hei", sans-serif; font-size: 11pt; line-height: 1.65; color: #1a1a1a; }
+  h1 { font-size: 20pt; color: #1558b0; border-bottom: 3px solid #1558b0; padding-bottom: 6px; margin-bottom:4px;}
+  h2 { font-size: 14pt; color: #fff; background: #1558b0; padding: 5px 10px; margin-top: 20px; page-break-after: avoid; }
+  h2.ans { background:#b8431f; }
+  .sub { color:#666; font-size:10pt; margin-top:0;}
+  .lead { background:#fffbe6; border:1px solid #f0d97a; padding:9px 13px; border-radius:6px;}
+  .q { background:#f5f9ff; border:1px solid #c5d9f5; border-radius:6px; padding:9px 13px; margin:11px 0; page-break-inside:avoid;}
+  .q b.no{ color:#1558b0;}
+  .mdl{ display:inline-block; background:#1558b0; color:#fff; font-size:9pt; padding:1px 7px; border-radius:3px; margin-left:6px;}
+  .sol { background:#f4faf2; border-left:4px solid #4a9e3f; padding:8px 12px; margin:9px 0; page-break-inside:avoid;}
+  .sol b{ color:#2e7d22;}
+  .key{ color:#c0392b; font-weight:bold;}
+  .pagebreak { page-break-before: always; }
+  ul,ol{ padding-left:20px; margin:4px 0;} li{ margin:2px 0;}
+  /* 图形 */
+  svg.fig{display:block;margin:8px auto;width:62%;max-width:280px;border:1px solid #e3e3e3;border-radius:6px;background:#fcfdff;}
+  svg.fig line, svg.fig path{stroke:#1558b0;stroke-width:2;fill:none;}
+  svg.fig .aux{stroke:#c0392b;stroke-width:1.6;stroke-dasharray:6 4;}
+  svg.fig .rt{stroke:#c0392b;stroke-width:1.4;fill:none;}
+  svg.fig .tk{stroke:#0b7a5b;stroke-width:2.2;}
+  svg.fig circle{fill:#1558b0;}
+  svg.fig .hh{stroke:#e67e22;stroke-width:2.4;}
+  svg.fig .ang{stroke:#8e44ad;stroke-width:1.8;fill:none;}
+  svg.fig .angtk{stroke:#8e44ad;stroke-width:1.8;}
+  svg.fig text{font-family:"WenQuanYi Zen Hei",sans-serif;font-size:12px;fill:#222;stroke:none;}
+</style>
+</head>
+<body>
+
+<h1>数学·八上 几何模型专项练习卷</h1>
+<p class="sub">配套《解题思路拓展手册》｜7 大模型各 1 题｜姓名：______ 日期：______</p>
+<p class="lead"><b>用法</b>：做每题前先问自己"<b>这是哪个模型？该画什么辅助线？</b>"。先独立做，再看后面的解析对思路。重点不是答案，是<b>"为什么想到这样做"</b>。</p>
+
+<h2>第 1 题　手拉手模型 <span class="mdl">模型 1 · SAS</span></h2>
+<div class="q"><b class="no">题：</b>如图，OA=OB，OC=OD，∠AOB=∠COD。求证：<b>AC = BD</b>。
+<svg class="fig" viewBox="0 0 300 175">
+  <line x1="150" y1="32" x2="49" y2="97"/><line x1="150" y1="32" x2="123" y2="149"/><line x1="49" y1="97" x2="123" y2="149"/>
+  <line x1="150" y1="32" x2="172" y2="129"/><line x1="150" y1="32" x2="234" y2="86"/><line x1="172" y1="129" x2="234" y2="86"/>
+  <line class="hh" x1="49" y1="97" x2="172" y2="129"/><line class="hh" x1="123" y1="149" x2="234" y2="86"/>
+  <path class="ang" d="M129.8 45 A24 24 0 0 1 144.6 55.4"/><path class="ang" d="M155.3 55.4 A24 24 0 0 1 170.2 45"/>
+  <line class="angtk" x1="138.5" y1="48.4" x2="133.9" y2="54.9"/><line class="angtk" x1="161.5" y1="48.4" x2="166" y2="54.9"/>
+  <line class="tk" x1="96" y1="60" x2="103" y2="69"/><line class="tk" x1="131" y1="89" x2="142" y2="92"/>
+  <line class="tk" x1="157" y1="79" x2="163" y2="85"/><line class="tk" x1="161" y1="76" x2="167" y2="82"/>
+  <line class="tk" x1="188" y1="62" x2="195" y2="54"/><line class="tk" x1="192" y1="64" x2="199" y2="56"/>
+  <circle cx="150" cy="32" r="3"/><circle cx="49" cy="97" r="3"/><circle cx="123" cy="149" r="3"/><circle cx="172" cy="129" r="3"/><circle cx="234" cy="86" r="3"/>
+  <text x="143" y="24">O</text><text x="33" y="100">A</text><text x="112" y="164">B</text><text x="176" y="143">C</text><text x="239" y="84">D</text>
+</svg></div>
+
+<h2>第 2 题　三垂直模型 <span class="mdl">模型 2 · AAS</span></h2>
+<div class="q"><b class="no">题：</b>如图，AM⊥MN 于 M，BN⊥MN 于 N，点 P 在 MN 上，∠APB=90°，且 AP=PB。求证：<b>MN = AM + BN</b>。
+<svg class="fig" viewBox="0 0 300 185">
+  <line x1="40" y1="155" x2="260" y2="155"/>
+  <line x1="70" y1="155" x2="70" y2="105"/><line x1="70" y1="105" x2="160" y2="155"/><line x1="160" y1="155" x2="210" y2="65"/><line x1="210" y1="65" x2="210" y2="155"/>
+  <path class="rt" d="M70 143 L82 143 L82 155"/><path class="rt" d="M210 143 L198 143 L198 155"/>
+  <path class="rt" d="M160 155 L151 150 L156 141 L165 146 Z"/>
+  <line class="tk" x1="110" y1="127" x2="120" y2="133"/><line class="tk" x1="180" y1="107" x2="190" y2="113"/>
+  <circle cx="70" cy="155" r="3"/><circle cx="210" cy="155" r="3"/><circle cx="160" cy="155" r="3"/><circle cx="70" cy="105" r="3"/><circle cx="210" cy="65" r="3"/>
+  <text x="62" y="172">M</text><text x="204" y="172">N</text><text x="156" y="173">P</text><text x="58" y="103">A</text><text x="216" y="64">B</text>
+</svg></div>
+
+<h2>第 3 题　角平分线模型 <span class="mdl">模型 3A</span></h2>
+<div class="q"><b class="no">题：</b>如图，OP 平分 ∠AOB，PM⊥OA 于 M，PN⊥OB 于 N。求证：<b>PM = PN</b>（角平分线性质）。
+<svg class="fig" viewBox="0 0 300 185">
+  <line x1="45" y1="160" x2="260" y2="160"/><line x1="45" y1="160" x2="157" y2="26"/><line class="aux" x1="45" y1="160" x2="181" y2="97"/>
+  <line x1="154" y1="109" x2="115" y2="76"/><line x1="154" y1="109" x2="154" y2="160"/>
+  <path class="rt" d="M154 148 L142 148 L142 160"/>
+  <path class="rt" d="M115 76 L120 70 L126 75 L121 81 Z"/>
+  <line class="tk" x1="150" y1="132" x2="159" y2="137"/><line class="tk" x1="130" y1="90" x2="139" y2="95"/>
+  <circle cx="45" cy="160" r="3"/><circle cx="157" cy="26" r="3"/><circle cx="154" cy="109" r="3"/><circle cx="115" cy="76" r="3"/><circle cx="154" cy="160" r="3"/>
+  <text x="32" y="166">O</text><text x="160" y="24">A</text><text x="262" y="166">B</text><text x="160" y="106">P</text><text x="98" y="74">M</text><text x="158" y="176">N</text>
+  <text x="183" y="95" style="font-size:10px;fill:#c0392b">平分线</text>
+</svg></div>
+
+<h2>第 4 题　倍长中线模型 <span class="mdl">模型 4</span></h2>
+<div class="q"><b class="no">题：</b>如图，AD 是 △ABC 的中线（BD=DC）。求证：<b>AB + AC &gt; 2AD</b>。
+<svg class="fig" viewBox="0 0 300 300">
+  <line x1="150" y1="35" x2="75" y2="160"/><line x1="150" y1="35" x2="225" y2="160"/><line x1="75" y1="160" x2="225" y2="160"/>
+  <line x1="150" y1="35" x2="150" y2="160"/><line class="aux" x1="150" y1="160" x2="150" y2="285"/><line class="aux" x1="75" y1="160" x2="150" y2="285"/>
+  <line class="tk" x1="108" y1="155" x2="118" y2="165"/><line class="tk" x1="182" y1="155" x2="192" y2="165"/>
+  <line class="tk" x1="145" y1="93" x2="155" y2="100"/><line class="tk" x1="145" y1="218" x2="155" y2="225"/>
+  <circle cx="150" cy="35" r="3"/><circle cx="75" cy="160" r="3"/><circle cx="225" cy="160" r="3"/><circle cx="150" cy="160" r="3"/><circle cx="150" cy="285" r="3"/>
+  <text x="146" y="28">A</text><text x="58" y="164">B</text><text x="230" y="164">C</text><text x="156" y="155">D</text><text x="146" y="300">E（辅助）</text>
+</svg></div>
+
+<h2>第 5 题　截长补短模型 <span class="mdl">模型 5</span></h2>
+<div class="q"><b class="no">题：</b>如图，AD 平分 ∠BAC，∠B = 2∠C。求证：<b>AB + BD = AC</b>。
+<svg class="fig" viewBox="0 0 300 195">
+  <line x1="40" y1="40" x2="60" y2="170"/><line x1="40" y1="40" x2="265" y2="155"/><line x1="60" y1="170" x2="265" y2="155"/><line x1="40" y1="40" x2="150" y2="162"/>
+  <line class="aux" x1="150" y1="162" x2="172" y2="92"/>
+  <circle cx="40" cy="40" r="3"/><circle cx="60" cy="170" r="3"/><circle cx="265" cy="155" r="3"/><circle cx="150" cy="162" r="3"/><circle cx="172" cy="92" r="3"/>
+  <text x="26" y="40">A</text><text x="46" y="184">B</text><text x="268" y="152">C</text><text x="142" y="178">D</text><text x="176" y="90">E</text>
+</svg>
+<span style="font-size:9.5pt;color:#666;">提示：在 AC 上截取 AE=AB，连 DE（图中红色辅助线）。</span></div>
+
+<h2>第 6 题　三线合一模型 <span class="mdl">模型 6</span></h2>
+<div class="q"><b class="no">题：</b>如图，△ABC 中 AB=AC，AD⊥BC 于 D。求证：<b>BD = DC</b>，且 <b>AD 平分 ∠BAC</b>。
+<svg class="fig" viewBox="0 0 300 200">
+  <line x1="150" y1="32" x2="80" y2="172"/><line x1="150" y1="32" x2="220" y2="172"/><line x1="80" y1="172" x2="220" y2="172"/><line x1="150" y1="32" x2="150" y2="172"/>
+  <path class="rt" d="M150 160 L162 160 L162 172"/>
+  <line class="tk" x1="110" y1="98" x2="119" y2="106"/><line class="tk" x1="181" y1="98" x2="190" y2="106"/>
+  <circle cx="150" cy="32" r="3"/><circle cx="80" cy="172" r="3"/><circle cx="220" cy="172" r="3"/><circle cx="150" cy="172" r="3"/>
+  <text x="146" y="26">A</text><text x="64" y="176">B</text><text x="226" y="176">C</text><text x="154" y="188">D</text>
+</svg></div>
+
+<h2>第 7 题　将军饮马模型 <span class="mdl">模型 7</span></h2>
+<div class="q"><b class="no">题：</b>如图，直线 l 同侧有两点 A、B。请在 l 上<b>作一点 P，使 PA+PB 最小</b>，并说明作法与理由。
+<svg class="fig" viewBox="0 0 300 200">
+  <line x1="30" y1="150" x2="285" y2="150"/>
+  <circle cx="105" cy="80" r="3"/><circle cx="215" cy="100" r="3"/>
+  <text x="92" y="76">A</text><text x="221" y="100">B</text><text x="276" y="145" style="font-size:11px">l</text>
+</svg>
+<span style="font-size:9.5pt;color:#666;">（自己在图上作对称点和连线）</span></div>
+
+<!-- ===================== 答案解析 ===================== -->
+<div class="pagebreak"></div>
+<h2 class="ans">参考答案与解析（先想"哪个模型、画什么线"，再核对）</h2>
+
+<div class="sol"><b>第 1 题（手拉手）</b><br>
+<span class="key">想法</span>：两等腰共顶点 O，目标 AC、BD 是"对应斜边" → 找 △AOC≅△BOD。<br>
+<b>证</b>：∵ ∠AOB=∠COD，两边同加 ∠BOC：∠AOB+∠BOC=∠COD+∠BOC，即 <b>∠AOC=∠BOD</b>。<br>
+在 △AOC 和 △BOD 中：OA=OB，∠AOC=∠BOD，OC=OD ⇒ <b>△AOC≅△BOD（SAS）</b> ⇒ AC=BD。</div>
+
+<div class="sol"><b>第 2 题（三垂直）</b><br>
+<span class="key">想法</span>：三个直角共线（M、P、N），凑 △AMP≅△PNB。<br>
+<b>证</b>：∠AMP=∠PNB=90°。∵ ∠APB=90°，∴ ∠APM+∠BPN=90°；又 ∠APM+∠MAP=90°，∴ <b>∠MAP=∠BPN</b>。<br>
+在 △AMP 和 △PNB 中：∠AMP=∠PNB，∠MAP=∠NPB，AP=PB ⇒ <b>△AMP≅△PNB（AAS）</b> ⇒ AM=PN，MP=NB。<br>
+∴ MN = MP+PN = NB+AM = <b>AM+BN</b>。</div>
+
+<div class="sol"><b>第 3 题（角平分线）</b><br>
+<span class="key">想法</span>：角平分线 + 向两边作垂线 → 凑全等。<br>
+<b>证</b>：∠PMO=∠PNO=90°，∠MOP=∠NOP（OP 平分），OP=OP（公共边）⇒ <b>△MOP≅△NOP（AAS）</b> ⇒ PM=PN。<br>
+<i>（这正是"角平分线性质"的来历，今后可直接引用。）</i></div>
+
+<div class="sol"><b>第 4 题（倍长中线）</b><br>
+<span class="key">想法</span>：有中线 AD → 倍长。要证 AB+AC&gt;2AD，把 AC"搬"到 AB 旁边凑三角形三边关系。<br>
+<b>证</b>：延长 AD 至 E，使 DE=AD，连 BE。<br>
+在 △ADC 和 △EDB 中：AD=ED，∠ADC=∠EDB（对顶角），DC=DB ⇒ <b>△ADC≅△EDB（SAS）</b> ⇒ BE=AC。<br>
+在 △ABE 中，<b>两边之和大于第三边</b>：AB+BE&gt;AE，即 AB+AC&gt;2AD。</div>
+
+<div class="sol"><b>第 5 题（截长补短—截长）</b><br>
+<span class="key">想法</span>：证 AB+BD=AC（和差），用<b>截长</b>：在长边 AC 上截取 AE=AB。<br>
+<b>证</b>：在 AC 上取 AE=AB，连 DE。<br>
+∵ AD 平分 ∠BAC ⇒ ∠BAD=∠EAD；又 AB=AE，AD=AD ⇒ <b>△ABD≅△AED（SAS）</b> ⇒ BD=ED，∠B=∠AED。<br>
+∵ ∠AED 是 △EDC 外角 ⇒ ∠AED=∠C+∠EDC；又 ∠B=2∠C，∠B=∠AED ⇒ 2∠C=∠C+∠EDC ⇒ <b>∠EDC=∠C</b> ⇒ ED=EC。<br>
+∴ AC=AE+EC=AB+ED=<b>AB+BD</b>。</div>
+
+<div class="sol"><b>第 6 题（三线合一）</b><br>
+<span class="key">想法</span>：等腰 + 高 → 直接出全等（HL）。<br>
+<b>证</b>：∵ AD⊥BC ⇒ ∠ADB=∠ADC=90°。在 Rt△ABD 和 Rt△ACD 中：AB=AC（斜边），AD=AD（公共直角边）⇒ <b>△ABD≅△ACD（HL）</b> ⇒ BD=DC，且 ∠BAD=∠CAD（AD 平分 ∠BAC）。<br>
+<i>（这就是"三线合一"的证明——记住结论以后可直接用。）</i></div>
+
+<div class="sol"><b>第 7 题（将军饮马）</b><br>
+<span class="key">想法</span>：同侧两点求距离和最短 → 作对称点化"折线"为"直线"。<br>
+<b>作法</b>：① 作 A 关于直线 l 的对称点 A′；② 连接 A′B，交 l 于点 P；P 即所求。<br>
+<b>理由</b>：由轴对称，PA=PA′，故 PA+PB=PA′+PB。当 A′、P、B <b>三点共线</b>时 PA′+PB 最短（两点之间线段最短）；其他位置 P′ 满足 P′A′+P′B&gt;A′B。∴ 此 P 使 PA+PB 最小，最小值=A′B。</div>
+
+<p style="text-align:center;color:#888;font-size:9pt;margin-top:14px;">— 几何模型专项练习卷 完 —　配套《解题思路拓展手册》使用，依据人教版八上教材</p>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>品言·4道错题：知识点回顾 + 讲透解析</title>
+<style>
+  @page { size: A4; margin: 1.6cm 1.5cm; }
+  body { font-family: "WenQuanYi Zen Hei", sans-serif; font-size: 11pt; line-height: 1.65; color: #1a1a1a; }
+  h1 { font-size: 19pt; color: #1558b0; border-bottom: 3px solid #1558b0; padding-bottom: 6px; margin-bottom:4px;}
+  h2 { font-size: 14pt; color: #fff; background: #1558b0; padding: 5px 10px; margin-top: 18px; page-break-after: avoid; }
+  .lead { background:#fffbe6; border:1px solid #f0d97a; padding:8px 12px; border-radius:6px; font-size:10.5pt;}
+  .kp{ background:#eef4ff; border:1px solid #b9d2f7; border-radius:6px; padding:8px 12px; margin:9px 0; page-break-inside:avoid;}
+  .kp b.h{ color:#1558b0; font-size:11.5pt;}
+  .q { background:#f7f7f7; border:1px solid #ccc; border-radius:6px; padding:8px 12px; margin:9px 0;}
+  .q b.no{color:#444;}
+  .diag{ background:#fff4ec; border-left:4px solid #e8731f; padding:7px 11px; margin:8px 0;}
+  .diag b{color:#c4521a;}
+  .think{ background:#f6eefc; border-left:4px solid #8e44ad; padding:7px 11px; margin:8px 0;}
+  .think b{color:#6a1b9a;}
+  .sol{ background:#f4faf2; border-left:4px solid #4a9e3f; padding:8px 12px; margin:8px 0; page-break-inside:avoid;}
+  .sol b{color:#2e7d22;}
+  .alt{ background:#eef2f5; border-left:4px solid #607d8b; padding:7px 11px; margin:8px 0;}
+  .alt b{color:#455a64;}
+  .ans{ background:#fff4ec; border:1px solid #f0a97a; border-radius:5px; padding:3px 8px; color:#c4521a; font-weight:bold; display:inline-block; margin-top:4px;}
+  .key{color:#c0392b;font-weight:bold;}
+  .chk{color:#1558b0;font-size:10pt;}
+  .sig{display:inline-block;background:#8e44ad;color:#fff;font-size:9pt;padding:0 6px;border-radius:3px;}
+  ol,ul{padding-left:20px;margin:4px 0;} li{margin:3px 0;}
+  svg.fig{display:block;margin:8px auto;width:55%;max-width:270px;border:1px solid #e3e3e3;border-radius:6px;background:#fcfdff;}
+  svg.fig line,svg.fig path{stroke:#1558b0;stroke-width:2;fill:none;}
+  svg.fig .aux{stroke:#c0392b;stroke-width:1.6;stroke-dasharray:6 4;}
+  svg.fig .thin{stroke:#8aa0b8;stroke-width:1.4;}
+  svg.fig .rt{stroke:#c0392b;stroke-width:1.4;fill:none;}
+  svg.fig .ang{stroke:#8e44ad;stroke-width:1.7;fill:none;}
+  svg.fig circle{fill:#1558b0;}
+  svg.fig text{font-family:"WenQuanYi Zen Hei";font-size:11px;fill:#222;stroke:none;}
+  .red{fill:#c0392b !important;}
+</style>
+</head>
+<body>
+
+<h1>品言·4 道错题：知识点回顾 + 讲透解析</h1>
+<p class="lead"><b>四段式，把每道讲透</b>：① 回顾考纲<b>知识点</b>（先自查能否背出）→ ② 诊断<b>考什么·卡在哪</b> → ③ <b>为什么会想到这么做（触发信号）</b> → ④ <b>规范解答</b>（每步标知识点），有更优解再附<b>【另解对比】</b>。<br>
+<b>核心观念</b>：辅助线、设元这些是"<b>方法</b>"，不是新知识点——它们都由教纲知识点推出，靠"<b>触发信号</b>"去想到。知识点是根，方法是会用知识点的标志。</p>
+
+<!-- ============ 题1 ============ -->
+<h2>题1　平行线 + 平移</h2>
+<div class="kp"><b class="h">①【知识点回顾】</b>　<span class="chk">□ 自查：能背出吗？</span>
+<ol>
+<li><b>平行线性质</b>：两直线平行 ⇒ 同位角相等／内错角相等／<b>同旁内角互补</b>。</li>
+<li><b>平移性质</b>：对应线段<b>平行且相等</b>、对应角相等。<span class="key">（AE 平移成 PQ ⇒ PQ∥AE）</span></li>
+<li>两边分别平行的两个角相等或互补；角的和差。</li>
+</ol></div>
+<div class="q"><b class="no">题：</b>∠B=72°，AE∥BC，D 在 AC 上，DE∥AB。(1) 求∠E；(2) AE 沿 AC 平移得 PQ，连 DQ：①∠EDQ=45°②∠EDQ=90° 求∠Q；③存在∠EDQ=3∠Q？
+<svg class="fig" viewBox="0 0 320 250">
+  <line x1="95" y1="75" x2="40" y2="225"/><line x1="40" y1="225" x2="285" y2="225"/><line x1="95" y1="75" x2="285" y2="225"/>
+  <line x1="95" y1="75" x2="212" y2="75"/><line x1="188" y1="150" x2="212" y2="75"/>
+  <text x="55" y="214" class="red" style="font-size:10px">72°</text>
+  <circle cx="95" cy="75" r="3"/><circle cx="40" cy="225" r="3"/><circle cx="285" cy="225" r="3"/><circle cx="188" cy="150" r="3"/><circle cx="212" cy="75" r="3"/>
+  <text x="84" y="70">A</text><text x="30" y="238">B</text><text x="285" y="238">C</text><text x="178" y="148">D</text><text x="216" y="72">E</text>
+</svg></div>
+<div class="diag"><b>②考什么·卡在哪：</b>考"平行线同旁内角互补"(求∠E)+"平移得 PQ∥AE∥BC"。她常卡在：忘"同旁内角互补"、不知"平移后 PQ∥AE"。</div>
+<div class="think"><b>③为什么这么想　<span class="sig">触发信号</span></b><br>
+∠EDQ 的两条边 <b>DE 牵着 AB、DQ 牵着 PQ(∥BC)</b>，这个角"横跨两组不同的平行线"。而平行线性质只能管"<b>同一组</b>平行线被一条截线所截"的角，管不了横跨的 ∠EDQ。<br>
+<b>口诀：两组平行线之间有"拐点"求角 ⇒ 过拐点作平行线。</b>所以过 D 作 DM∥BC——这样 D 点同时有 ∥AB(就是 DE)和 ∥BC(就是 DM)，∠B 和 ∠Q 都能"传"到 D。</div>
+<div class="sol"><b>④解答　(1)</b> ∵AE∥BC ∴∠BAE+∠B=180°(知识点1)∴∠BAE=108°；∵DE∥AB ∴∠AED+∠BAE=180° ∴<b>∠E=72°</b>。
+<svg class="fig" viewBox="0 0 320 240" style="width:58%;">
+  <line x1="150" y1="38" x2="150" y2="262"/><line class="aux" x1="72" y1="160" x2="300" y2="160"/>
+  <line x1="150" y1="160" x2="108" y2="62"/><line x1="150" y1="92" x2="250" y2="92"/><line x1="150" y1="160" x2="250" y2="92"/>
+  <text x="142" y="34">A</text><text x="142" y="276">C</text><text x="156" y="172">D</text><text x="132" y="92">P</text><text x="96" y="60">E</text><text x="254" y="92">Q</text><text x="303" y="164">M</text>
+  <circle cx="150" cy="160" r="3"/><circle cx="108" cy="62" r="3"/><circle cx="150" cy="92" r="3"/><circle cx="250" cy="92" r="3"/>
+  <text x="116" y="150" class="red" style="font-size:10px">72°</text><text x="172" y="122" style="font-size:9px;fill:#0b7a5b">∠EDQ</text><text x="225" y="84" style="font-size:9px;fill:#8e44ad">∠Q</text>
+</svg>
+<b>(2)</b> 过 D 作 DM∥BC。∵平移 ⇒ PQ∥AE∥BC ⇒ DM∥PQ。<br>
+∵DM∥BC、DE∥AB ⇒ ∠MDE=∠B=72°；∵DM∥PQ ⇒ ∠MDQ=∠Q(内错角)。<br>
+①(DQ 在角内)∠EDQ=72°−∠Q ⇒ <b>∠Q=27°</b>；②(∠EDQ>72°,DM 在角内)∠EDQ=72°+∠Q ⇒ <b>∠Q=18°</b>；③ 恒有 ∠Q=|∠EDQ−72°|，令 ∠EDQ=3∠Q ⇒ <b>∠EDQ=54°或108°</b>。
+<div class="ans">①27°　②18°　③54°或108°</div></div>
+<div class="alt"><b>【另解：不作辅助线，但较繁】</b>D、P 都在 AC 上，看△DPQ：∵PQ∥BC ⇒ ∠DPQ=∠C；外角 ∠QDC=∠C+∠Q；又 DE∥AB ⇒ ∠EDC=180°−∠A；<br>
+∴∠EDQ=∠EDC−∠QDC=180°−(∠A+∠C)−∠Q=180°−108°−∠Q=72°−∠Q。<br>
+能做，但<b>凭空引入了题目没给的 ∠A、∠C</b>，要再用"∠A+∠C=180°−∠B=108°"消掉，步骤多、"加还是减"易错。<b>⇒ 作辅助线才是通法、最简。</b></div>
+
+<!-- ============ 题2 ============ -->
+<h2>题2　折叠（轴对称）</h2>
+<div class="kp"><b class="h">①【知识点回顾】</b>　<span class="chk">□ 自查：能背出吗？</span>
+<ol>
+<li><b>等腰三角形</b>：等边对等角 ⇒ AB=AC 时 ∠B=∠C。<b>三角形内角和</b>=180°。</li>
+<li><b>折叠(轴对称)性质</b>：折叠前后全等 ⇒ 对应角相等、对应边相等。<span class="key">(∠ADB=∠ADB′)</span></li>
+<li><b>邻补角</b>：∠ADB+∠ADC=180°。</li>
+</ol></div>
+<div class="q"><b class="no">题：</b>AB=AC，∠B=20°，D 是 BC 上动点，沿 AD 对折使 B 落在 B′，当 B′D⊥BC 时求∠BAD。<br><span style="color:#c4521a;">（B′ 可能折到 BC 上方或下方 ⇒ 必须分两种情况，图见下方解答）</span></div>
+<div class="diag"><b>②考什么·卡在哪：</b>考"折叠⇒对应角相等"+内角和+邻补角。她常卡在：不会把"折叠"翻译成"∠ADB′=∠ADB"；<b>漏掉分类讨论</b>（B′ 在 BC 上方 / 下方）只写一个答案。</div>
+<div class="think"><b>③为什么这么想　<span class="sig">触发信号</span></b>
+<ol style="margin:3px 0;">
+<li><b>看到"折叠/翻折" ⇒ 立刻写"对应角相等"</b>：∠ADB′=∠ADB。</li>
+<li><b>有"动点 / 垂直" ⇒ 分两种情况</b>：B′ 折到 BC <b>上方</b>、<b>下方</b>各一种，<b>各画一张图</b>。</li>
+<li><b>设 ∠BAD=x</b>，把图里的角都用 x 表示，再<b>对着图把角加起来</b>列方程（看哪两个角拼成第三个，<b>不用绝对值</b>）。</li>
+</ol></div>
+<div class="sol"><b>④解答　设 ∠BAD=x。</b> ∵AB=AC ∴∠C=∠B=20°；△ABD 中 ∠ADB=180°−20°−x=160°−x。<br>
+∵折叠 ∴∠ADB′=∠ADB=160°−x；∵B、D、C 共线 ∴∠ADC=180°−∠ADB=20°+x；∵B′D⊥BC ∴∠B′DC=90°。<br>
+<b>下面按 B′ 的位置分两种情况，在图上把角"拼起来"：</b>
+<div style="display:flex;gap:10px;margin-top:6px;">
+<div style="flex:1;text-align:center;">
+<svg class="fig" viewBox="0 0 320 230" style="width:100%;max-width:240px;margin:4px auto;">
+  <line x1="160" y1="156" x2="40" y2="200"/><line x1="40" y1="200" x2="280" y2="200"/><line x1="280" y1="200" x2="160" y2="156"/>
+  <line x1="160" y1="156" x2="204" y2="200"/>
+  <line class="aux" x1="160" y1="156" x2="204" y2="36"/><line class="aux" x1="204" y1="200" x2="204" y2="36"/>
+  <path class="rt" d="M204 188 L216 188 L216 200"/><text x="218" y="182" class="red" style="font-size:9px">90°</text>
+  <path class="ang" d="M58 197 A16 16 0 0 0 55 185"/><text x="60" y="190" class="red" style="font-size:9px">20°</text>
+  <circle cx="160" cy="156" r="3"/><circle cx="40" cy="200" r="3"/><circle cx="280" cy="200" r="3"/><circle cx="204" cy="200" r="3"/><circle cx="204" cy="36" r="3"/>
+  <text x="156" y="150">A</text><text x="30" y="214">B</text><text x="284" y="214">C</text><text x="194" y="216">D</text><text x="210" y="40">B′</text>
+</svg>
+<div style="text-align:left;font-size:10.5pt;"><b>情况① B′ 在 BC 上方</b>（D 靠近 C）：图中 DB′ 在 ∠ADC <b>内部</b> ⇒ <b>∠ADB′＋∠B′DC＝∠ADC</b><br>(160°−x)＋90°＝20°＋x ⇒ <b>x＝115°</b></div>
+</div>
+<div style="flex:1;text-align:center;">
+<svg class="fig" viewBox="0 0 320 300" style="width:100%;max-width:240px;margin:4px auto;">
+  <line x1="160" y1="156" x2="40" y2="200"/><line x1="40" y1="200" x2="280" y2="200"/><line x1="280" y1="200" x2="160" y2="156"/>
+  <line x1="160" y1="156" x2="116" y2="200"/>
+  <line class="aux" x1="160" y1="156" x2="116" y2="276"/><line class="aux" x1="116" y1="200" x2="116" y2="276"/>
+  <path class="rt" d="M116 212 L128 212 L128 200"/><text x="130" y="220" class="red" style="font-size:9px">90°</text>
+  <path class="ang" d="M58 197 A16 16 0 0 0 55 185"/><text x="60" y="190" class="red" style="font-size:9px">20°</text>
+  <circle cx="160" cy="156" r="3"/><circle cx="40" cy="200" r="3"/><circle cx="280" cy="200" r="3"/><circle cx="116" cy="200" r="3"/><circle cx="116" cy="276" r="3"/>
+  <text x="156" y="150">A</text><text x="30" y="214">B</text><text x="284" y="214">C</text><text x="104" y="216">D</text><text x="98" y="284">B′</text>
+</svg>
+<div style="text-align:left;font-size:10.5pt;"><b>情况② B′ 在 BC 下方</b>（D 靠近 B）：图中 DC 在 ∠ADB′ <b>内部</b> ⇒ <b>∠ADB′＝∠ADC＋∠B′DC</b><br>160°−x＝(20°＋x)＋90° ⇒ <b>x＝25°</b></div>
+</div>
+</div>
+<div class="ans">∠BAD ＝ 115°（B′在上方）或 25°（B′在下方）；若书上图限定 B′ 在某一侧，就只取那一个。</div></div>
+
+<!-- ============ 题3 ============ -->
+<h2>题3　梯形求腰的范围</h2>
+<div class="kp"><b class="h">①【知识点回顾】</b>　<span class="chk">□ 自查：能背出吗？</span>
+<ol>
+<li><b>平行四边形</b>：两组对边分别平行 ⇒ 平行四边形；平行四边形<b>对边相等</b>。</li>
+<li><b>三角形三边关系</b>：两边之和 > 第三边；两边之差 < 第三边。</li>
+</ol></div>
+<div class="q"><b class="no">题：</b>梯形 ABCD 中 AD∥BC，AD=6，AB=7，BC=8，求 CD 的取值范围。
+<svg class="fig" viewBox="0 0 320 210">
+  <line x1="90" y1="60" x2="225" y2="60"/><line x1="60" y1="170" x2="240" y2="170"/><line x1="90" y1="60" x2="60" y2="170"/><line x1="225" y1="60" x2="240" y2="170"/>
+  <line class="aux" x1="225" y1="60" x2="195" y2="170"/>
+  <circle cx="90" cy="60" r="3"/><circle cx="225" cy="60" r="3"/><circle cx="60" cy="170" r="3"/><circle cx="240" cy="170" r="3"/><circle cx="195" cy="170" r="3"/>
+  <text x="80" y="55">A</text><text x="228" y="55">D</text><text x="48" y="184">B</text><text x="244" y="184">C</text><text x="186" y="186">E</text>
+  <text x="150" y="52" style="font-size:9px;fill:#888">AD=6</text><text x="135" y="190" style="font-size:9px;fill:#888">BC=8</text><text x="56" y="120" style="font-size:9px;fill:#888">AB=7</text><text x="244" y="120" style="font-size:9px;fill:#888">CD=?</text>
+</svg></div>
+<div class="diag"><b>②考什么·卡在哪：</b>把梯形转化为"平行四边形+三角形"，再用三边关系。她常卡在：想不到作辅助线；不知"求一条边的范围"要用三角形三边关系。</div>
+<div class="think"><b>③为什么这么想　<span class="sig">触发信号</span></b><br>
+<b>看到"梯形" ⇒ 先想辅助线把它转成熟图形</b>(平行四边形 + 三角形)。梯形四大辅助线：① 平移一腰 ② 作两条高 ③ 平移对角线 ④ 延长两腰交于一点。<br>
+本题要求<b>一条腰 CD 的范围</b> ⇒ 得把分散的 AB、AD、BC "<b>集中到一个三角形</b>"里用三边关系 ⇒ 选"<b>平移一腰</b>"：过 D 作 DE∥AB，正好把 AB、AD、BC 都搬进 △DEC。</div>
+<div class="sol"><b>④解答　过 D 作 DE∥AB 交 BC 于 E。</b><br>
+∵AD∥BE 且 DE∥AB ∴四边形 ABED 是平行四边形 ∴DE=AB=7，BE=AD=6 ∴EC=8−6=2。<br>
+△DEC 中由三边关系：7−2<CD<7+2。
+<div class="ans">5 < CD < 9</div></div>
+
+<!-- ============ 题4 ============ -->
+<h2>题4　等边三角形 + 旋转</h2>
+<div class="kp"><b class="h">①【知识点回顾】</b>　<span class="chk">□ 自查：能背出吗？</span>
+<ol>
+<li><b>等边三角形</b>：三边相等、三角 60°；对称轴=各边<b>垂直平分线</b>(也是中线/高/角平分线)。</li>
+<li><b>垂直平分线的性质与判定</b>：线上点到两端等距（E 在 CD ⇒ EA=EB）；反之 <b>到两端等距的点在垂直平分线上</b>（题目所给材料，用来定位 F）。</li>
+<li><b>旋转性质</b>：旋转前后全等 ⇒ 对应边、角相等。<b>内角和</b>=180°。</li>
+</ol></div>
+<div class="q"><b class="no">题：</b>CD 是等边△ABC 的对称轴，E 是 CD 上动点，△ABE 顺时针旋转后与 △CBF 重合。(1) 旋转中心、角度？(2) 连 AF 交 CD 于 P，求 ∠APC，E 移动时是否变化？
+<svg class="fig" viewBox="0 0 320 240" style="width:56%;">
+  <line x1="70" y1="205" x2="230" y2="205"/><line x1="230" y1="205" x2="150" y2="66"/><line x1="150" y1="66" x2="70" y2="205"/><line x1="150" y1="66" x2="150" y2="205"/>
+  <line class="thin" x1="70" y1="205" x2="150" y2="140"/><line class="thin" x1="230" y1="205" x2="150" y2="140"/><line class="thin" x1="230" y1="205" x2="246" y2="103"/><line class="thin" x1="150" y1="66" x2="246" y2="103"/>
+  <line x1="70" y1="205" x2="246" y2="103"/>
+  <path class="rt" d="M150 193 L162 193 L162 205"/>
+  <circle cx="70" cy="205" r="3"/><circle cx="230" cy="205" r="3"/><circle cx="150" cy="66" r="3"/><circle cx="150" cy="205" r="3"/><circle cx="150" cy="140" r="3"/><circle cx="246" cy="103" r="3"/><circle cx="150" cy="159" r="3"/>
+  <text x="58" y="216">A</text><text x="234" y="216">B</text><text x="144" y="60">C</text><text x="150" y="220">D</text><text x="130" y="142">E</text><text x="250" y="103">F</text><text x="156" y="170" class="red">P</text>
+</svg></div>
+<div class="diag"><b>②考什么·卡在哪：</b>等边对称⇒EA=EB；旋转⇒CF=AE、BF=BE，凑出 <b>FB=FC</b>，再用"中垂线判定"定位 F。她常卡在：不知"对称轴=中垂线⇒EA=EB"；想不到用题目给的"<b>到两端等距⇒在中垂线上</b>"去定位 F。</div>
+<div class="think"><b>③为什么这么想　<span class="sig">触发信号</span></b>
+<ol style="margin:3px 0;">
+<li><b>求一个角 ⇒ 先放进一个三角形用内角和</b>：∠APC=180°−∠PAC−∠PCA。∠PCA=∠ACD=30° 好求，难在 ∠PAC=∠FAC。</li>
+<li><b>题目开头给的材料是"到两端等距的点在垂直平分线上"——这是强烈暗示：去找"哪个点到两端距离相等"。</b>顺着算：CF=AE=EB=BF ⇒ <b>FB=FC</b> ⇒ F 在 BC 的垂直平分线上。</li>
+<li>又 AB=AC ⇒ A 也在 BC 的垂直平分线上 ⇒ <b>AF 就是从 A 出发的对称轴，平分 ∠BAC</b> ⇒ ∠FAC=30°。</li>
+</ol></div>
+<div class="sol"><b>④解答　(1)</b> 绕 B 把 A 转到相邻顶点 C ⇒ <b>旋转中心 B，旋转角 60°</b>。<br>
+<b>(2)</b> CD 是对称轴 ⇒ ∠ACD=30°、∠BAC=60°；E 在 AB 的中垂线 CD 上 ⇒ EA=EB。<br>
+由旋转 △ABE≌△CBF ⇒ CF=AE、BF=BE。<br>
+∴ CF=AE=EB=BF，即 <b>FB=FC</b>。<br>
+由"到两端距离相等的点在垂直平分线上"：F 在 BC 的垂直平分线上；又 AB=AC，A 也在 ⇒ <b>AF 就是 BC 的垂直平分线（从 A 出发的对称轴），平分 ∠BAC</b> ⇒ ∠PAC=∠FAC=30°。<br>
+又 ∠PCA=∠ACD=30°，△APC 中 ∠APC=180°−30°−30°=<b>120°</b>。
+<div class="ans">(1) B，60°　(2) ∠APC=120°，不变</div></div>
+
+<h2>★ 总结：知识点是根，方法靠"信号"触发</h2>
+<table style="border-collapse:collapse;width:100%;font-size:10.5pt;">
+<tr><th style="border:1px solid #999;padding:5px;background:#dce8fb;">题</th><th style="border:1px solid #999;padding:5px;background:#dce8fb;">薄弱知识点(先补)</th><th style="border:1px solid #999;padding:5px;background:#dce8fb;">触发信号(再练)</th></tr>
+<tr><td style="border:1px solid #999;padding:5px;">1</td><td style="border:1px solid #999;padding:5px;">平行线同旁内角互补；平移保持平行</td><td style="border:1px solid #999;padding:5px;">两平行线间拐点求角 → 过拐点作平行线</td></tr>
+<tr><td style="border:1px solid #999;padding:5px;">2</td><td style="border:1px solid #999;padding:5px;">折叠⇒对应角/边相等；分类讨论</td><td style="border:1px solid #999;padding:5px;">折叠+求角 → 设x列方程；遇动点/垂直→分类</td></tr>
+<tr><td style="border:1px solid #999;padding:5px;">3</td><td style="border:1px solid #999;padding:5px;">平行四边形性质；三角形三边关系</td><td style="border:1px solid #999;padding:5px;">梯形 → 作辅助线转化；求边范围→集中到三角形</td></tr>
+<tr><td style="border:1px solid #999;padding:5px;">4</td><td style="border:1px solid #999;padding:5px;">垂直平分线的判定与性质；旋转性质</td><td style="border:1px solid #999;padding:5px;">求角→放进三角形；出现"两段相等"→用中垂线判定定位点</td></tr>
+</table>
+<p style="text-align:center;color:#888;font-size:9pt;margin-top:10px;">— 先把"薄弱知识点"背牢，再把"触发信号"练成条件反射，这类题就通了 —</p>
+</body>
+</html>
